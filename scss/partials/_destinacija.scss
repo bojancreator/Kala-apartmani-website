@@ -1,0 +1,37 @@
+.destinacija {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  height: auto;
+  color: $white;
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+  .dest-img {
+    display: inline-flex;
+    object-fit: cover;
+    object-position: center;
+    img {
+      width: 100%;
+    }
+  }
+  .container-dest {
+    display: flex;
+    flex-direction: column;
+    background-color: $accent;
+    text-align: right;
+    clip-path: polygon(10% 0%, 1000% 0%, 100% 100%, 0% 100%);
+    padding: 4vw;
+    margin-left: -4em;
+    align-items: flex-end;
+    justify-content: center;
+    @media only screen and (max-width: 800px) {
+      text-align: center;
+      align-items: unset;
+      margin-left: 0;
+    }
+    h2 {
+      font-size: clamp(2em, 3vw, 3em);
+      color: $white;
+    }
+  }
+}

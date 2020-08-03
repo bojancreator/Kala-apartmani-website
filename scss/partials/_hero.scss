@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+.intro__text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  h2 {
+    color: rgba($white, 0.7);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+  }
+}
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;900&family=Oswald:wght@400;700&display=swap");
+
+$ff-s: "PT Sans", serif;
+$ff-ss: "Oswald", sans-serif;
+
+$fw-n: 400;
+$fw-sb: 700;
+
+@mixin sans-serif(
+  $fs,
+  $ls: 0.15em,
+  $color: $dark-gray,
+  $tt: uppercase,
+  $lh: 1
+) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  text-transform: $tt;
+  line-height: $lh;
+  font-family: $ff-ss;
+  font-weight: $fw-n;
+}

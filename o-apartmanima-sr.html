@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kala apartmani</title>
+    <link
+      href="css/bootstrap-datepicker3.standalone.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/phobs.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bcdbaf081a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="o-apartmanima-sr">
+    <!-- header start -->
+    <header class="header">
+      <!-- hamburger -->
+      <div class="header-mobilni">
+        <img
+          class="logo-mobilni"
+          src="img/logo/kala-logo.png"
+          alt="logo mobilni"
+        />
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </div>
+      <!-- hamburger end -->
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="o-apartmanima-sr.html">O apartmanima</a></li>
+          <li><a href="sobe-sr.html">Sobe</a></li>
+          <li class="logo">
+            <a href="index.html" class="logo-link">
+              <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
+            </a>
+          </li>
+          <li><a href="destinacija-sr.html">Destinacija</a></li>
+          <li><a href="specijalne-ponude-sr.html">Specijalne ponude</a></li>
+          <li><a href="kontakt-sr.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- booking start -->
+    <section class="booking">
+      <div class="container">
+        <div class="book-btn">
+          <i class="fas fa-sort-amount-up-alt"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <h2>Rezervaciona forma</h2>
+
+        <form
+          action="https://secure.phobs.net/booking.php"
+          method="get"
+          id="phobs_book"
+          name="phobs_book"
+          class="booking__forma"
+          target="_blank"
+        >
+          <input
+            name="hotel"
+            type="hidden"
+            value="f6e540ff6a059c219039032332881124"
+            style="display: none;"
+          />
+          <div class="form_date from_date">
+            <label>Dolazak</label>
+            <input
+              class="check_in_day"
+              name="check_in_day"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_in_month"
+              name="check_in_month"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_in_year"
+              name="check_in_year"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="datepicker form-control"
+              name="booking-checkin"
+              readonly="readonly"
+              type="text"
+              placeholder="Arrival Date"
+              class="fa fa-calendar"
+            />
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+          <div class="form_date to_date departure">
+            <label>Odlazak</label>
+
+            <input
+              class="check_out_day"
+              name="check_out_day"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_out_month"
+              name="check_out_month"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_out_year"
+              name="check_out_year"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="datepicker form-control"
+              name="booking-checkout"
+              readonly="readonly"
+              type="text"
+              placeholder="Departure Date"
+            /><i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+          <!--           <div class="form-group">
+            <label>Pristupni ključ (opciono)</label>
+            <input
+              name="partners_access"
+              type="text"
+              class="form-control"
+              placeholder="Access Key"
+            />
+          </div> -->
+          <div class="form-button-group">
+            <label class="booking-label">&nbsp;</label>
+            <button type="submit" class="btn btn-primary">
+              BOOK NOW
+            </button>
+            <input
+              name="company_id"
+              type="hidden"
+              value="3ee86bd97786d3f1b4636072a4ba8450"
+              style="display: none;"
+            />
+            <input
+              name="view_cancel"
+              type="hidden"
+              value=""
+              style="display: none;"
+            />
+            <input
+              name="lang"
+              type="hidden"
+              value="en"
+              style="display: none;"
+            />
+            <div class="advanced_form_link">
+              <a
+                href="https://secure.phobs.net/booking.php?company_id=3ee86bd97786d3f1b4636072a4ba8450&amp;lang=en&amp;view_cancel=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="view_cancel"
+                onclick="return viewCancelBooking(this)"
+              >
+                Change/Cancel reservation
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- booking end -->
+
+    <!-- HERO -->
+    <section class="apartmani">
+      <div class="apartmani_1">
+        <div class="blur">
+        <h1 class="apartmani-title">O Kala apartmanima</h1>
+        <p class="apartmani__text">
+          Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko
+          od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža
+          i istoimene, najpopularnije Budvanske plaže.<br />
+          Zbog svoje lokacije i blizine plaže idealni su za porodice sa decom,
+          takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže
+          se do popularnih mesta za provod, restorana, kafića, diskoteka….
+        </p>
+      </div>
+      </div>
+      <div class="apartmani_2">
+      </div>
+      <div class="apartmani_3">
+        Plaže su udaljeni 600 m, a isto toliko I od glavne autobuske
+        stanice. Stari grad Budve udaljen je 1,5 km.<br />
+        Objekat raspolaže sa 2 jednokrevetna apartmana, 2 sudio apartmana I
+        4 dvokrevetne sobe.</p>
+      </div>
+      <div class="apartmani_4">
+        <p>Sobe i apartmani su opremljeni modernim nameštajem, smart tv
+          uređajima sa kablovskim kanalima, kuhinjom, klimom, kupatilom,
+          tarasom, wi fi internetom i privatnim parkingom.<br />
+          Sve smeštajne jedinice locirane su na prvom i drugom spratu.<br />
+          Parking se naplaćuje i mora se unapred rezervisati.</p>
+      </div>
+      <div class="apartmani_5">
+        <p>Wi-fi je besplatan. <br />
+          Zgrada poseduje lift.</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="bottom-box logo-footer">
+          <img src="img/logo/kala-logo-beli.png" alt="logo footer" />
+        </div>
+        <div class="bottom-box menu-footer">
+          <ul class="menu-down">
+            <li class="menu-list"><a href="index.html">Početna</a></li>
+            <li class="menu-list">
+              <a href="o-apartmanima-sr.html">O apartmanima</a>
+            </li>
+            <li class="menu-list"><a href="sobe-sr.html">Sobe</a></li>
+            <li class="menu-list">
+              <a href="destinacija-sr.html">Destinacija</a>
+            </li>
+            <li class="menu-list">
+              <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
+            </li>
+            <li class="menu-list"><a href="kontakt-sr.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="bottom-box social-footer">
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="bottom-box kontakt-footer">
+          <h3>Kontakt</h3>
+          <p>
+            Adresa: Ulica 14, br. 9<br />
+            Budva, Crna gora<br />
+            Tel: <a href="tel:+38267281869"> +382 67 281869</a><br />
+            Email:
+            <a href="mailto:welcome@kalabudva.me"> welcome@kalabudva.me</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright start -->
+    <div class="copyright">
+      ©&nbsp;MONTENEGRO&nbsp;STARS&nbsp;HOTEL&nbsp;GROUP |
+      WEB&nbsp;SYSTEM&nbsp;BY<a
+        href="https://www.emarket1ng.net"
+        target="_blank"
+        >&nbsp;EMARKET1NG.NET</a
+      >
+    </div>
+    <!-- copyright end -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/bootstrap-datepicker.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery.smoothState.js"></script>
+    <script type="text/javascript" src="js/morphext.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jPushMenu.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/kala.js"></script>
+    <script>
+      $('.from_date .datepicker').on('changeDate', function (ev) {
+        var elm = jQuery(this);
+
+        tommorrow = ev.date;
+        tommorrow.setDate(tommorrow.getDate());
+        jQuery('.to_date .datepicker').datepicker('setDate', tommorrow);
+
+        elm.parents('.from_date').find('.check_in_day').val(ev.date.getDate());
+        elm
+          .parents('.from_date')
+          .find('.check_in_month')
+          .val(ev.date.getMonth() + 1);
+        elm
+          .parents('.from_date')
+          .find('.check_in_year')
+          .val(ev.date.getFullYear());
+      });
+
+      $('.to_date .datepicker').on('changeDate', function (ev) {
+        var elm = jQuery(this);
+
+        elm.parents('.to_date').find('.check_out_day').val(ev.date.getDate());
+        elm
+          .parents('.to_date')
+          .find('.check_out_month')
+          .val(ev.date.getMonth() + 1);
+        elm
+          .parents('.to_date')
+          .find('.check_out_year')
+          .val(ev.date.getFullYear());
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+body {
+  color: $dark-gray;
+  font-family: $ff-s;
+  font-weight: $fw-n;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 1s;
+  z-index: 1;
+  &.fixed-header {
+    height: 60px;
+    background-color: rgba($white, 0.95);
+    color: $dark-gray;
+    & li.logo img {
+      height: 40px;
+    }
+  }
+}
+
+// logo
+.header-mobilni {
+  display: none;
+}
+@media only screen and (max-width: 1023px) {
+  .logo {
+    display: none;
+    height: 0;
+  }
+  .header-mobilni {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    background-color: rgba($white, 0.9);
+
+    img {
+      height: 55px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+h1 {
+  font-family: $ff-ss;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $ff-ss;
+  color: $accent;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-family: $ff-ss;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: $fw-n;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.btn {
+  padding: 1em 2em;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  background-color: $accent;
+  color: $white;
+  transition: opacity 0.5s;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: $white;
+  border: 2px solid $white;
+  transition: all 0.5s;
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 2px solid transparent;
+    color: $accent;
+  }
+}
+.btn-text {
+  background-color: unset;
+  width: auto;
+  text-align: left;
+  padding: 0;
+  color: currentColor;
+  margin-top: 10px;
+  position: relative;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: currentColor;
+    width: 0;
+    padding-bottom: 2px;
+    transition: width 1s;
+  }
+  &:hover::after {
+    width: 100px;
+  }
+}
+
+.container-small {
+  width: 55rem;
+  margin: 0 auto;
+}
+
+/* forme */
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  min-width: 150px;
+  height: 2.8em;
+}
+input[type='submit'] {
+  text-transform: uppercase;
+}
+::placeholder {
+  font-size: 0.9em;
+  padding: 0.5em 0.5em;
+  line-height: 0.8em;
+  color: $gray;
+}
+
+iframe {
+  display: block;
+}

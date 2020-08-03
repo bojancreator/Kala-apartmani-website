@@ -1,0 +1,46 @@
+.about__us {
+  background-color: $white;
+  height: auto;
+  padding: 5em 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: $light-blue;
+    font-size: clamp(2em, 3vw, 3em);
+    text-align: center;
+    margin: 0.2em 0;
+  }
+  .about-us-box {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+    img {
+      object-position: cover;
+      width: 100%;
+    }
+    .about-us-text {
+      padding: 3vw;
+      margin-left: -5vw;
+      background-color: rgba($white, 1);
+      border: 0.3em solid $accent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      font-size: clamp(0.8rem, 1vw, 2rem);
+      line-height: 1.5em;
+      @media only screen and (max-width: 768px) {
+        margin: -5em 3em 0;
+      }
+    }
+  }
+}

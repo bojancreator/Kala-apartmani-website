@@ -1,0 +1,77 @@
+footer {
+  background-color: $dark-gray;
+  color: $white;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: left;
+    @media only screen and (max-width: 666px) {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 733px) {
+   .logo-footer {
+     display: none;
+   }
+  }
+  .logo-footer img {
+    height: 130px;
+  }
+  .menu-footer {
+    line-height: 1.7em;
+    @media only screen and (max-width: 977px) {
+      display: none;
+    }
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $light-gray;
+        text-transform: uppercase;
+      }
+      a:hover,
+      a:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+  .social-footer {
+    flex-direction: row;
+    i {
+      font-size: 2.5em;
+      margin-left: 0.6em;
+      color: $light-gray;
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+  .kontakt-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+    line-height: 1.5em;
+    @media only screen and (max-width: 666px) {
+      align-items: center;
+    }
+  }
+}
+
+.copyright {
+  background-color: $dark-dark-gray;
+  color: $light-gray;
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+}

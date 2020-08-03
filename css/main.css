@@ -1,0 +1,1407 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;900&family=Oswald:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.5em;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1,
+h2,
+h3,
+h4 {
+  margin: 1em 0 0.5em;
+  padding: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  color: #606060;
+  font-family: "PT Sans", serif;
+  font-weight: 400;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 1s;
+  z-index: 1;
+}
+
+header.fixed-header {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #606060;
+}
+
+header.fixed-header li.logo img {
+  height: 40px;
+}
+
+.header-mobilni {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .logo {
+    display: none;
+    height: 0;
+  }
+  .header-mobilni {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .header-mobilni img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: #00666f;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn {
+  padding: 1em 2em;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: #00666f;
+  color: #ffffff;
+  transition: opacity 0.5s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.5s;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  color: #00666f;
+}
+
+.btn-text {
+  background-color: unset;
+  width: auto;
+  text-align: left;
+  padding: 0;
+  color: currentColor;
+  margin-top: 10px;
+  position: relative;
+}
+
+.btn-text:hover, .btn-text:focus {
+  text-decoration: none;
+}
+
+.btn-text::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: currentColor;
+  width: 0;
+  padding-bottom: 2px;
+  transition: width 1s;
+}
+
+.btn-text:hover::after {
+  width: 100px;
+}
+
+.container-small {
+  width: 55rem;
+  margin: 0 auto;
+}
+
+/* forme */
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  min-width: 150px;
+  height: 2.8em;
+}
+
+input[type='submit'] {
+  text-transform: uppercase;
+}
+
+::placeholder {
+  font-size: 0.9em;
+  padding: 0.5em 0.5em;
+  line-height: 0.8em;
+  color: #a7a7a7;
+}
+
+iframe {
+  display: block;
+}
+
+nav {
+  margin: 0.5em auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color: #00666f;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 998;
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-gap: 1em;
+    padding: 0 1em;
+    width: 300px;
+    margin-top: 5em;
+  }
+}
+
+nav ul img {
+  height: 7rem;
+  width: auto;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding-bottom: 1em;
+    padding-left: 2em;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00383d;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul li a {
+    color: #ffffff;
+  }
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  color: #606060;
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul li a:hover, nav ul li a:focus {
+    color: #e8e9eb;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  nav ul li:first-of-type {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1em;
+  }
+}
+
+nav.active {
+  right: 0px;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn.open {
+  transform: translateX(-240px);
+}
+
+.menu-btn__burger {
+  width: 25px;
+  height: 4px;
+  background: #00666f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background: #00666f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background: #ffffff;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background: #ffffff;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.intro__text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.intro__text h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.about__us {
+  background-color: #ffffff;
+  height: auto;
+  padding: 5em 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about__us .about-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #00adbd;
+  font-size: clamp(2em, 3vw, 3em);
+  text-align: center;
+  margin: 0.2em 0;
+}
+
+.about__us .about-us-box {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__us .about-us-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__us .about-us-box img {
+  object-position: cover;
+  width: 100%;
+}
+
+.about__us .about-us-box .about-us-text {
+  padding: 3vw;
+  margin-left: -5vw;
+  background-color: white;
+  border: 0.3em solid #00666f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: clamp(0.8rem, 1vw, 2rem);
+  line-height: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__us .about-us-box .about-us-text {
+    margin: -5em 3em 0;
+  }
+}
+
+.sobe__home {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e9eb;
+  width: 100%;
+  height: auto;
+  padding: 3em 0 5em;
+  /*   background-color: $accent; */
+}
+
+.sobe__home h2 {
+  font-size: clamp(2em, 3vw, 3em);
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.sobe__home .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
+  /* background-color: $accent; */
+  color: #606060;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sobe__home figure {
+  background-color: #ffffff;
+  border: 4px solid #00666f;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sobe__home figure img {
+  width: 100%;
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.sobe__home figure img:hover {
+  transform: scale(1.1);
+}
+
+.sobe__home figure figcaption {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #606060;
+  font-size: 1.5em;
+  margin-top: 0.6em;
+  line-height: 1.3em;
+  padding: 0 1rem;
+}
+
+.sobe__home figure p {
+  line-height: 1.5em;
+  padding: 0 1rem;
+}
+
+.sobe__home button {
+  margin: 0 1rem 1rem;
+}
+
+footer {
+  background-color: #606060;
+  color: #ffffff;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer .bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: left;
+}
+
+@media only screen and (max-width: 666px) {
+  footer .bottom-box {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 733px) {
+  footer .logo-footer {
+    display: none;
+  }
+}
+
+footer .logo-footer img {
+  height: 130px;
+}
+
+footer .menu-footer {
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 977px) {
+  footer .menu-footer {
+    display: none;
+  }
+}
+
+footer .menu-footer li {
+  list-style: none;
+}
+
+footer .menu-footer li a {
+  text-decoration: none;
+  color: #e8e9eb;
+  text-transform: uppercase;
+}
+
+footer .menu-footer li a:hover,
+footer .menu-footer li a:focus {
+  opacity: 0.8;
+}
+
+footer .social-footer {
+  flex-direction: row;
+}
+
+footer .social-footer i {
+  font-size: 2.5em;
+  margin-left: 0.6em;
+  color: #e8e9eb;
+}
+
+footer .social-footer i:hover, footer .social-footer i:focus {
+  opacity: 0.8;
+}
+
+footer .kontakt-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  line-height: 1.5em;
+}
+
+@media only screen and (max-width: 666px) {
+  footer .kontakt-footer {
+    align-items: center;
+  }
+}
+
+.copyright {
+  background-color: #505050;
+  color: #e8e9eb;
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.booking {
+  width: 80%;
+  margin-left: 10%;
+  padding: 1em 0;
+  background-color: white;
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  z-index: 997;
+  transition: bottom 1s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 888px) {
+  .booking {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .booking {
+    bottom: -270px;
+  }
+}
+
+.booking .container {
+  max-width: 80em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.booking button {
+  width: 100%;
+  height: 2.8em;
+}
+
+.booking input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #a7a7a7;
+}
+
+.booking input:hover {
+  border-color: #00666f;
+}
+
+.booking input:focus, .booking input:active, .booking input:focus-within, .booking input:visited {
+  border-color: #606060;
+}
+
+.booking h2 {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  padding-left: 1rem;
+  font-size: 1.5em;
+}
+
+.booking.kliz {
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.booking i {
+  font-size: 1.5em;
+  line-height: 1.5;
+  right: 1em;
+  position: absolute;
+  transition: opacity 0.3s;
+}
+
+.booking i.fa-sort-amount-up-alt,
+.booking.kliz i.fa-times {
+  opacity: 1;
+}
+
+.booking i.fa-times,
+.booking.kliz i.fa-sort-amount-up-alt {
+  opacity: 0;
+}
+
+.booking__forma {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-self: center;
+  grid-gap: 2em;
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 888px) {
+  .booking__forma {
+    grid-gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .booking__forma {
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+  }
+}
+
+.advanced_form_link {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.form_date {
+  position: relative;
+}
+
+.form_date i {
+  font-size: 0.9em;
+  position: absolute;
+  display: block;
+  top: 53%;
+  right: 0;
+  margin: -6px 8px 0 0;
+  color: #9e9e9e;
+}
+
+.datepicker:hover {
+  cursor: pointer;
+}
+
+.book-btn {
+  color: #00666f;
+  cursor: pointer;
+}
+
+/* datepicker */
+.datepicker.dropdown-menu {
+  font-size: 1em;
+}
+
+.datepicker-dropdown {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1em;
+}
+
+.datepicker-dropdown.datepicker {
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid #f5f5f5;
+}
+
+.datepicker-dropdown.datepicker .datepicker-switch {
+  color: #a9a9a9;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background: #e4e5e7;
+  border: 1px solid #dadbdd;
+  border-right: 0;
+  border-left: 0;
+}
+
+.datepicker-dropdown.datepicker .datepicker-switch:hover {
+  cursor: pointer;
+}
+
+.datepicker-dropdown.datepicker .prev,
+.datepicker-dropdown.datepicker .next {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  width: 30px !important;
+  height: 30px !important;
+  background: #e4e5e7;
+  border: 1px solid #dadbdd;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.datepicker-dropdown.datepicker .prev:hover,
+.datepicker-dropdown.datepicker .next:hover {
+  cursor: pointer;
+  background: #ffb600;
+  border-color: #ffb600;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .day {
+  padding: 10px 12px;
+  color: #a1b1c1;
+  background: #f4fafd;
+  border: 1px solid #e7eef1;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.datepicker-dropdown.datepicker .new.day {
+  background: #fefefe;
+}
+
+.datepicker-dropdown.datepicker .day.disabled {
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .day:hover {
+  cursor: pointer;
+  background: #1dc1f8;
+  border-color: #1dc1f8;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .day.disabled:hover {
+  cursor: not-allowed;
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .day.today {
+  background: #1dc1f8;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .datepicker-months,
+.datepicker-dropdown.datepicker .datepicker-years,
+.datepicker-dropdown.datepicker .datepicker-decades,
+.datepicker-dropdown.datepicker .datepicker-centuries {
+  max-width: 301px;
+}
+
+.datepicker-dropdown.datepicker .datepicker-months table tr td,
+.datepicker-dropdown.datepicker .datepicker-years table tr td,
+.datepicker-dropdown.datepicker .datepicker-decades table tr td,
+.datepicker-dropdown.datepicker .datepicker-centuries table tr td {
+  padding: 0;
+  padding-top: 10px;
+}
+
+.datepicker-dropdown.datepicker .month,
+.datepicker-dropdown.datepicker .year,
+.datepicker-dropdown.datepicker .decade,
+.datepicker-dropdown.datepicker .century {
+  display: inline-block;
+  width: 50px;
+  padding: 10px 0;
+  color: #a1b1c1;
+  background: #f4fafd;
+  border: 1px solid #e7eef1;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.datepicker-dropdown.datepicker .month:hover,
+.datepicker-dropdown.datepicker .year:hover,
+.datepicker-dropdown.datepicker .decade:hover,
+.datepicker-dropdown.datepicker .century:hover {
+  background: #1dc1f8;
+  border-color: #1dc1f8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.datepicker-dropdown.datepicker .month.disabled,
+.datepicker-dropdown.datepicker .year.disabled,
+.datepicker-dropdown.datepicker .decade.disabled,
+.datepicker-dropdown.datepicker .century.disabled {
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .month.disabled:hover,
+.datepicker-dropdown.datepicker .year.disabled:hover,
+.datepicker-dropdown.datepicker .decade.disabled:hover,
+.datepicker-dropdown.datepicker .century.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* @media only screen and (max-width: 663px) {
+  .booking-label {
+    display: none;
+  }
+} */
+.destinacija {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  height: auto;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+  .destinacija {
+    grid-template-columns: 1fr;
+  }
+}
+
+.destinacija .dest-img {
+  display: inline-flex;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destinacija .dest-img img {
+  width: 100%;
+}
+
+.destinacija .container-dest {
+  display: flex;
+  flex-direction: column;
+  background-color: #00666f;
+  text-align: right;
+  clip-path: polygon(10% 0%, 1000% 0%, 100% 100%, 0% 100%);
+  padding: 4vw;
+  margin-left: -4em;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .destinacija .container-dest {
+    text-align: center;
+    align-items: unset;
+    margin-left: 0;
+  }
+}
+
+.destinacija .container-dest h2 {
+  font-size: clamp(2em, 3vw, 3em);
+  color: #ffffff;
+}
+
+body#kontakt-sr {
+  background: url(/img/destinacija/destinacija2.jpg) no-repeat top fixed;
+}
+
+.kontakt {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.kontakt .container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.kontakt h1 {
+  font-size: clamp(1.5em, 2.5vw, 2.5em);
+}
+
+.kontakt__forma {
+  margin-top: 1em;
+}
+
+.kontakt__forma form {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.kontakt__forma form textarea {
+  grid-column: 1 / 3;
+}
+
+.kontakt__forma form input[type='submit'] {
+  justify-self: center;
+  grid-column: 1 / 3;
+}
+
+.kontakt__forma .address__box {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.1em;
+}
+
+.kontakt__forma .address__box h3 {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 666px) {
+  .kontakt__forma form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* body#o-apartmanima-sr {
+  background-color: $light-gray;
+  header {
+    background-color: $white;
+  }
+} */
+.apartmani {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 116px;
+}
+
+.apartmani img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apartmani .apartmani_1 {
+  background: url(/img/destinacija/destinacija2.jpg) no-repeat center;
+  background-size: cover;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.apartmani .apartmani_1 .blur {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.apartmani .apartmani_1 h1 {
+  margin-top: 0;
+}
+
+.apartmani .apartmani_2 {
+  background: url(/img/zgrada/1.jpg) no-repeat center;
+  background-size: cover;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.apartmani .apartmani_3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: #00666f;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.apartmani .apartmani_4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #00adbd;
+  padding: 1em;
+}
+
+.apartmani .apartmani_5 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #a7a7a7;
+  padding: 1em;
+}
+/*# sourceMappingURL=main.css.map */
