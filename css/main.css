@@ -410,7 +410,7 @@ header.fixed-header li.logo img {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5em;
+  font-size: clamp(1.5em, 2.5vw, 2.5em);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -418,7 +418,7 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   color: #00666f;
-  font-size: 2em;
+  font-size: clamp(2em, 3vw, 3em);
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3em;
@@ -527,6 +527,10 @@ input[type='submit'] {
 
 iframe {
   display: block;
+}
+
+img {
+  width: 100%;
 }
 
 nav {
@@ -698,7 +702,6 @@ nav.active {
 }
 
 .hero img {
-  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
@@ -714,7 +717,6 @@ nav.active {
 
 .intro__text h2 {
   color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 @keyframes fadeIn {
@@ -740,7 +742,6 @@ nav.active {
   justify-content: center;
   align-content: center;
   color: #00adbd;
-  font-size: clamp(2em, 3vw, 3em);
   text-align: center;
   margin: 0.2em 0;
 }
@@ -761,7 +762,6 @@ nav.active {
 
 .about__us .about-us-box img {
   object-position: cover;
-  width: 100%;
 }
 
 .about__us .about-us-box .about-us-text {
@@ -794,7 +794,6 @@ nav.active {
 }
 
 .sobe__home h2 {
-  font-size: clamp(2em, 3vw, 3em);
   text-align: center;
   margin-bottom: 1.5em;
 }
@@ -817,7 +816,6 @@ nav.active {
 }
 
 .sobe__home figure img {
-  width: 100%;
   transition: all 0.5s;
   transform-origin: bottom;
 }
@@ -1222,11 +1220,6 @@ footer .kontakt-footer {
   cursor: not-allowed;
 }
 
-/* @media only screen and (max-width: 663px) {
-  .booking-label {
-    display: none;
-  }
-} */
 .destinacija {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -1246,10 +1239,6 @@ footer .kontakt-footer {
   object-position: center;
 }
 
-.destinacija .dest-img img {
-  width: 100%;
-}
-
 .destinacija .container-dest {
   display: flex;
   flex-direction: column;
@@ -1267,11 +1256,11 @@ footer .kontakt-footer {
     text-align: center;
     align-items: unset;
     margin-left: 0;
+    clip-path: none;
   }
 }
 
 .destinacija .container-dest h2 {
-  font-size: clamp(2em, 3vw, 3em);
   color: #ffffff;
 }
 
@@ -1291,10 +1280,6 @@ body#kontakt-sr {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.kontakt h1 {
-  font-size: clamp(1.5em, 2.5vw, 2.5em);
 }
 
 .kontakt__forma {
@@ -1349,7 +1334,7 @@ body#o-apartmanima-sr {
   justify-content: center;
   align-items: center;
   text-align: left;
-  color: #00666f;
+  color: #505050;
 }
 
 .apartmani .apartmani--text {
@@ -1360,18 +1345,17 @@ body#o-apartmanima-sr {
 
 .apartmani .apartmani--text h1 {
   margin-top: 0;
+  color: #00666f;
 }
 
 .apartmani .apartmani__img {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: auto;
 }
 
 .apartmani .apartmani__img img {
   object-fit: cover;
-  width: 100%;
   height: 60vh;
   border: 6px solid #ffffff;
   outline: 8px solid #00666f;

@@ -47,7 +47,7 @@ header {
 
 h1 {
   font-family: $ff-ss;
-  font-size: 2.5em;
+  font-size: clamp(1.5em, 2.5vw, 2.5em);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -55,7 +55,7 @@ h1 {
 h2 {
   font-family: $ff-ss;
   color: $accent;
-  font-size: 2em;
+  font-size: clamp(2em, 3vw, 3em);
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3em;
@@ -157,4 +157,8 @@ input[type='submit'] {
 
 iframe {
   display: block;
+}
+
+img {
+  width: 100%;
 }
