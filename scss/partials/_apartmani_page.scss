@@ -57,7 +57,7 @@ body#o-apartmanima-sr {
 .apartmani--gallery {
   background-color: rgba($accent, 0.8);
   padding: 5em 10vw;
-  .gallery {
+  .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 0.5em;

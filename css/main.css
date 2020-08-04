@@ -1423,13 +1423,13 @@ body#o-apartmanima-sr {
   padding: 5em 10vw;
 }
 
-.apartmani--gallery .gallery {
+.apartmani--gallery .photo-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 0.5em;
 }
 
-.apartmani--gallery .gallery img {
+.apartmani--gallery .photo-gallery img {
   height: 180px;
   object-fit: cover;
   overflow: hidden;
@@ -1437,7 +1437,7 @@ body#o-apartmanima-sr {
   cursor: pointer;
 }
 
-.apartmani--gallery .gallery img:hover {
+.apartmani--gallery .photo-gallery img:hover {
   transform: scale(1.05);
 }
 /*# sourceMappingURL=main.css.map */
