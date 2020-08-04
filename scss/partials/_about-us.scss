@@ -10,7 +10,6 @@
     justify-content: center;
     align-content: center;
     color: $light-blue;
-    font-size: clamp(2em, 3vw, 3em);
     text-align: center;
     margin: 0.2em 0;
   }
@@ -25,7 +24,6 @@
     }
     img {
       object-position: cover;
-      width: 100%;
     }
     .about-us-text {
       padding: 3vw;

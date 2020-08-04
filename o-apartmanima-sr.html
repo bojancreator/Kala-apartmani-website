@@ -12,6 +12,11 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+
     <script src="js/phobs.js"></script>
     <script
       src="https://kit.fontawesome.com/bcdbaf081a.js"
@@ -185,37 +190,81 @@
 
     <!-- HERO -->
     <section class="apartmani">
-      <div class="apartmani_1">
-        <div class="blur">
+      <div class="apartmani--text">
         <h1 class="apartmani-title">O Kala apartmanima</h1>
-        <p class="apartmani__text">
-          Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko
-          od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža
-          i istoimene, najpopularnije Budvanske plaže.<br />
+        <p>
+          Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko od
+          saobraćajne buke, a u blizini turističkog naselja Slovenska plaža i
+          istoimene, najpopularnije Budvanske plaže.<br />
           Zbog svoje lokacije i blizine plaže idealni su za porodice sa decom,
-          takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže
-          se do popularnih mesta za provod, restorana, kafića, diskoteka….
+          takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže se
+          do popularnih mesta za provod, restorana, kafića, diskoteka...
+        </p>
+        <p>
+          Plaže su udaljeni 600m, a isto toliko i od glavne autobuske stanice.
+          Stari grad Budve udaljen je 1,5km.<br />
+          Objekat raspolaže sa 2 jednokrevetna apartmana, 2 sudio apartmana i 4
+          dvokrevetne sobe.
+        </p>
+        <p>
+          Sobe i apartmani su opremljeni modernim nameštajem, smart tv uređajima
+          sa kablovskim kanalima, kuhinjom, klimom, kupatilom, tarasom, wi-fi
+          internetom i privatnim parkingom.<br />
+          Sve smeštajne jedinice locirane su na prvom i drugom spratu.<br />
+          Parking se naplaćuje i mora se unapred rezervisati.
+        </p>
+        <p>
+          Wi-fi je besplatan. <br />
+          Zgrada poseduje lift.
         </p>
       </div>
+      <div class="apartmani__img">
+        <img src="/img/zgrada/1.jpg" alt="zgrada" />
       </div>
-      <div class="apartmani_2">
-      </div>
-      <div class="apartmani_3">
-        Plaže su udaljeni 600 m, a isto toliko I od glavne autobuske
-        stanice. Stari grad Budve udaljen je 1,5 km.<br />
-        Objekat raspolaže sa 2 jednokrevetna apartmana, 2 sudio apartmana I
-        4 dvokrevetne sobe.</p>
-      </div>
-      <div class="apartmani_4">
-        <p>Sobe i apartmani su opremljeni modernim nameštajem, smart tv
-          uređajima sa kablovskim kanalima, kuhinjom, klimom, kupatilom,
-          tarasom, wi fi internetom i privatnim parkingom.<br />
-          Sve smeštajne jedinice locirane su na prvom i drugom spratu.<br />
-          Parking se naplaćuje i mora se unapred rezervisati.</p>
-      </div>
-      <div class="apartmani_5">
-        <p>Wi-fi je besplatan. <br />
-          Zgrada poseduje lift.</p>
+    </section>
+
+    <section class="apartmani--gallery">
+      <div class="photo-gallery">
+        <div class="">
+          <a href="/img/jednosoban/1.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/jednosoban/1.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/jednosoban/2.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/jednosoban/2.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/standard/1.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/standard/1.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/standard/1.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/standard/1.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/superior/1.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/superior/1.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/studio/1.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/studio/1.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/studio/10.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/studio/10.jpg"
+          /></a>
+        </div>
+        <div class="">
+          <a href="/img/jednosoban/20.jpg" data-lightbox="photos"
+            ><img class="img-fluid" src="/img/jednosoban/20.jpg"
+          /></a>
+        </div>
       </div>
     </section>
 
@@ -283,6 +332,9 @@
     <script type="text/javascript" src="js/jPushMenu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/kala.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
     <script>
       $('.from_date .datepicker').on('changeDate', function (ev) {
         var elm = jQuery(this);

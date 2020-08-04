@@ -10,9 +10,6 @@
     display: inline-flex;
     object-fit: cover;
     object-position: center;
-    img {
-      width: 100%;
-    }
   }
   .container-dest {
     display: flex;
@@ -28,9 +25,9 @@
       text-align: center;
       align-items: unset;
       margin-left: 0;
+      clip-path: none;
     }
     h2 {
-      font-size: clamp(2em, 3vw, 3em);
       color: $white;
     }
   }

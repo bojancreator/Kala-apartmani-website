@@ -410,15 +410,16 @@ header.fixed-header li.logo img {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5em;
+  font-size: clamp(1.5em, 5vw, 2.5em);
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1.3;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
   color: #00666f;
-  font-size: 2em;
+  font-size: clamp(1.5em, 5vw, 2.5em);
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.3em;
@@ -527,6 +528,10 @@ input[type='submit'] {
 
 iframe {
   display: block;
+}
+
+img {
+  width: 100%;
 }
 
 nav {
@@ -698,7 +703,6 @@ nav.active {
 }
 
 .hero img {
-  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
@@ -712,9 +716,14 @@ nav.active {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 920px) {
+  .intro__text {
+    bottom: 10%;
+  }
+}
+
 .intro__text h2 {
   color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 @keyframes fadeIn {
@@ -740,7 +749,6 @@ nav.active {
   justify-content: center;
   align-content: center;
   color: #00adbd;
-  font-size: clamp(2em, 3vw, 3em);
   text-align: center;
   margin: 0.2em 0;
 }
@@ -761,7 +769,6 @@ nav.active {
 
 .about__us .about-us-box img {
   object-position: cover;
-  width: 100%;
 }
 
 .about__us .about-us-box .about-us-text {
@@ -794,7 +801,6 @@ nav.active {
 }
 
 .sobe__home h2 {
-  font-size: clamp(2em, 3vw, 3em);
   text-align: center;
   margin-bottom: 1.5em;
 }
@@ -817,7 +823,6 @@ nav.active {
 }
 
 .sobe__home figure img {
-  width: 100%;
   transition: all 0.5s;
   transform-origin: bottom;
 }
@@ -944,16 +949,16 @@ footer .kontakt-footer {
 }
 
 .booking {
-  width: 80%;
-  margin-left: 10%;
+  width: 340px;
   padding: 1em 0;
   background-color: white;
   position: fixed;
-  bottom: -100px;
+  height: 60px;
+  bottom: 0px;
   left: 0;
   right: 0;
   z-index: 997;
-  transition: bottom 1s;
+  transition: left 0.5s ease-in-out, width 0.5s ease-in-out 0.5s, height 0.5s ease-in-out 1s;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -966,7 +971,7 @@ footer .kontakt-footer {
 
 @media only screen and (max-width: 663px) {
   .booking {
-    bottom: -270px;
+    bottom: 0px;
   }
 }
 
@@ -1006,8 +1011,31 @@ footer .kontakt-footer {
 }
 
 .booking.kliz {
-  bottom: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 160px;
   background-color: rgba(255, 255, 255, 0.95);
+}
+
+@media only screen and (max-width: 768px) {
+  .booking.kliz {
+    bottom: 0px;
+    width: 90%;
+    height: 160px;
+    left: 5%;
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .booking.kliz {
+    bottom: 0px;
+    width: 90%;
+    height: 330px;
+    left: 5%;
+    right: 5%;
+  }
 }
 
 .booking i {
@@ -1222,11 +1250,6 @@ footer .kontakt-footer {
   cursor: not-allowed;
 }
 
-/* @media only screen and (max-width: 663px) {
-  .booking-label {
-    display: none;
-  }
-} */
 .destinacija {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -1246,10 +1269,6 @@ footer .kontakt-footer {
   object-position: center;
 }
 
-.destinacija .dest-img img {
-  width: 100%;
-}
-
 .destinacija .container-dest {
   display: flex;
   flex-direction: column;
@@ -1267,11 +1286,11 @@ footer .kontakt-footer {
     text-align: center;
     align-items: unset;
     margin-left: 0;
+    clip-path: none;
   }
 }
 
 .destinacija .container-dest h2 {
-  font-size: clamp(2em, 3vw, 3em);
   color: #ffffff;
 }
 
@@ -1291,10 +1310,6 @@ body#kontakt-sr {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.kontakt h1 {
-  font-size: clamp(1.5em, 2.5vw, 2.5em);
 }
 
 .kontakt__forma {
@@ -1333,75 +1348,96 @@ body#kontakt-sr {
   }
 }
 
-/* body#o-apartmanima-sr {
-  background-color: $light-gray;
-  header {
-    background-color: $white;
-  }
-} */
+body#o-apartmanima-sr {
+  background: url(/img/destinacija/destinacija2.jpg) no-repeat top fixed;
+}
+
 .apartmani {
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding-top: 116px;
+  grid-gap: 2em;
+  grid-template-columns: 2fr 1fr;
+  padding: 10vh 10vw;
+  padding-top: calc(10vh + 50px);
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: #505050;
 }
 
-.apartmani img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .apartmani {
+    padding: 10vh 0 10vh 5vw;
+    grid-template-columns: 3fr 2fr;
+  }
 }
 
-.apartmani .apartmani_1 {
-  background: url(/img/destinacija/destinacija2.jpg) no-repeat center;
-  background-size: cover;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+@media (max-width: 767px) {
+  .apartmani {
+    padding: 10vh 5vw;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 }
 
-.apartmani .apartmani_1 .blur {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
-  padding: 1em;
+.apartmani .apartmani--text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  align-items: flex-start;
 }
 
-.apartmani .apartmani_1 h1 {
+.apartmani .apartmani--text h1 {
   margin-top: 0;
+  color: #00666f;
 }
 
-.apartmani .apartmani_2 {
-  background: url(/img/zgrada/1.jpg) no-repeat center;
-  background-size: cover;
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
+@media (max-width: 767px) {
+  .apartmani .apartmani--text {
+    grid-row: 2;
+  }
 }
 
-.apartmani .apartmani_3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  background-color: #00666f;
-  color: #ffffff;
-  padding: 1em;
+.apartmani .apartmani__img {
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.apartmani .apartmani_4 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  background-color: #00adbd;
-  padding: 1em;
+@media (max-width: 767px) {
+  .apartmani .apartmani__img {
+    grid-row: 1;
+  }
 }
 
-.apartmani .apartmani_5 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  background-color: #a7a7a7;
-  padding: 1em;
+.apartmani .apartmani__img img {
+  object-fit: cover;
+  height: 60vh;
+  border: 6px solid #ffffff;
+  outline: 8px solid #00666f;
+}
+
+.apartmani--gallery {
+  background-color: rgba(0, 102, 111, 0.8);
+  padding: 5em 10vw;
+}
+
+.apartmani--gallery .photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5em;
+}
+
+.apartmani--gallery .photo-gallery img {
+  height: 180px;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.apartmani--gallery .photo-gallery img:hover {
+  transform: scale(1.05);
 }
 /*# sourceMappingURL=main.css.map */
