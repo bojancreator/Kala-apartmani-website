@@ -19,12 +19,13 @@ footer {
     }
   }
   @media only screen and (max-width: 733px) {
-   .logo-footer {
-     display: none;
-   }
+    .logo-footer {
+      display: none;
+    }
   }
   .logo-footer img {
     height: 130px;
+    width: auto;
   }
   .menu-footer {
     line-height: 1.7em;

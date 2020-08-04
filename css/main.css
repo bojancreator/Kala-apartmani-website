@@ -378,7 +378,7 @@ header {
 
 header.fixed-header {
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   color: #606060;
 }
 
@@ -472,9 +472,9 @@ a {
 
 .btn-text {
   background-color: unset;
-  width: auto;
+  width: max-content;
   text-align: left;
-  padding: 0;
+  padding: 0.3em 0;
   color: currentColor;
   margin-top: 10px;
   position: relative;
@@ -482,21 +482,22 @@ a {
 
 .btn-text:hover, .btn-text:focus {
   text-decoration: none;
+  outline: none;
 }
 
 .btn-text::after {
-  content: ' ';
+  content: '';
   position: absolute;
   left: 0;
-  bottom: -5px;
+  height: 2px;
+  bottom: 0px;
   background-color: currentColor;
   width: 0;
-  padding-bottom: 2px;
-  transition: width 1s;
+  transition: width 0.5s ease-in;
 }
 
 .btn-text:hover::after {
-  width: 100px;
+  width: 175px;
 }
 
 .container-small {
@@ -885,6 +886,7 @@ footer .bottom-box {
 
 footer .logo-footer img {
   height: 130px;
+  width: auto;
 }
 
 footer .menu-footer {
@@ -1415,7 +1417,7 @@ body#o-apartmanima-sr {
   object-fit: cover;
   height: 60vh;
   border: 6px solid #ffffff;
-  outline: 8px solid #00666f;
+  outline: 8px solid #e8e9eb;
 }
 
 .apartmani--gallery {
@@ -1425,19 +1427,57 @@ body#o-apartmanima-sr {
 
 .apartmani--gallery .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+}
+
+.apartmani--gallery .photo-gallery .gallery__img {
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  height: 200px;
 }
 
 .apartmani--gallery .photo-gallery img {
-  height: 180px;
+  height: 200px;
   object-fit: cover;
-  overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
 }
 
 .apartmani--gallery .photo-gallery img:hover {
   transform: scale(1.05);
+}
+
+.destinacija__hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.destinacija__hero img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.destinacija__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #505050;
+  padding: 6em 10%;
+  text-align: center;
+}
+
+.destinacija__text h1 {
+  color: #00666f;
+  margin-bottom: 1em;
+}
+
+body#destinacija-sr nav ul li a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

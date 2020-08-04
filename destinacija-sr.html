@@ -12,6 +12,11 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+
     <script src="js/phobs.js"></script>
     <script
       src="https://kit.fontawesome.com/bcdbaf081a.js"
@@ -19,7 +24,7 @@
     ></script>
   </head>
 
-  <body id="kontakt-sr">
+  <body id="destinacija-sr">
     <!-- header start -->
     <header class="header">
       <!-- hamburger -->
@@ -41,12 +46,15 @@
           <li><a href="sobe-sr.html">Sobe</a></li>
           <li class="logo">
             <a href="index.html" class="logo-link">
-              <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
+              <img
+                src="img/logo/kala-logo-beli.png"
+                alt="Kala apartmani logo"
+              />
             </a>
           </li>
           <li><a href="destinacija-sr.html">Destinacija</a></li>
           <li><a href="specijalne-ponude-sr.html">Specijalne ponude</a></li>
-          <li><a href="/kontakt-sr.html">Kontakt</a></li>
+          <li><a href="kontakt-sr.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -184,41 +192,21 @@
     <!-- booking end -->
 
     <!-- HERO -->
-    <section class="kontakt">
-      <div class="container">
-        <h1 class="kontakt-title">Kontaktirajte nas</h1>
-        <div class="kontakt__grid">
-          <div class="kontakt__forma">
-            <form action="php/email.php" method="post">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="ime i prezime"
-              />
-              <input type="email" name="email" id="email" placeholder="email" />
-              <textarea
-                placeholder="Poruka"
-                name="poruka"
-                id="poruka"
-              ></textarea>
-              <input type="submit" class="btn btn-primary" />
-            </form>
-            <div class="address__box">
-              <h3 class="address__title">Kontakt</h3>
-              <p class="address__text">
-                Adresa: Ulica 14, br. 9<br />
-                Budva, Crna gora<br />
-                Tel: +382 67 281869<br />
-                Email:
-                <a href="mailto:welcome@kalabudva.me">welcome@kalabudva.me</a>
-              </p>
-            </div>
-          </div>
+    <section class="destinacija-hero">
+      <div class="destinacija__hero">
+        <img src="/img/destinacija/destinacija3.jpg" alt="destinacija1" />
+        <div class="destinacija__text">
+          <h1>Destinacija</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+            voluptates inventore. Nisi voluptatem eaque eius id laboriosam eos
+            voluptate dolor ullam quam dolorem, similique libero, cum aliquid
+            harum, minus provident?
+          </p>
         </div>
+        <img src="/img/destinacija/destinacija1.jpg" alt="destinacija1" />
       </div>
     </section>
-    <!-- mapa -->
     <section class="mapa">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.8247510746196!2d18.84670019702273!3d42.28600470307863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd485b3d9ac51%3A0xd8299ed09f9e123f!2z0JHRg9C00LLQsNC90YHQutCwINGA0LjQstC40ZjQtdGA0LA!5e0!3m2!1ssr!2srs!4v1596133828477!5m2!1ssr!2srs"
@@ -231,8 +219,6 @@
         tabindex="0"
       ></iframe>
     </section>
-    <!-- mapa end -->
-
     <!-- footer -->
     <footer>
       <div class="container">
@@ -297,6 +283,9 @@
     <script type="text/javascript" src="js/jPushMenu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/kala.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
     <script>
       $('.from_date .datepicker').on('changeDate', function (ev) {
         var elm = jQuery(this);

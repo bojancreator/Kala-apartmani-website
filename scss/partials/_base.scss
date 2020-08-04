@@ -14,7 +14,7 @@ header {
   z-index: 1;
   &.fixed-header {
     height: 60px;
-    background-color: rgba($white, 0.95);
+    background-color: rgba($white, 1);
     color: $dark-gray;
     & li.logo img {
       height: 40px;
@@ -106,28 +106,29 @@ a {
 }
 .btn-text {
   background-color: unset;
-  width: auto;
+  width: max-content;
   text-align: left;
-  padding: 0;
+  padding: 0.3em 0;
   color: currentColor;
   margin-top: 10px;
   position: relative;
   &:hover,
   &:focus {
     text-decoration: none;
+    outline: none;
   }
   &::after {
-    content: ' ';
+    content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
+    height: 2px;
+    bottom: 0px;
     background-color: currentColor;
     width: 0;
-    padding-bottom: 2px;
-    transition: width 1s;
+    transition: width 0.5s ease-in;
   }
   &:hover::after {
-    width: 100px;
+    width: 175px;
   }
 }
 
