@@ -15,6 +15,15 @@ body#o-apartmanima-sr {
   align-items: center;
   text-align: left;
   color: $dark-dark-gray;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 10vh 0 10vh 5vw;
+    grid-template-columns: 3fr 2fr;
+  }
+  @media (max-width: 767px) {
+    padding: 10vh 5vw;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 
   .apartmani--text {
     display: flex;
@@ -24,18 +33,44 @@ body#o-apartmanima-sr {
       margin-top: 0;
       color: $accent;
     }
+    @media (max-width: 767px) {
+      grid-row: 2;
+    }
   }
+
   .apartmani__img {
     display: flex;
     flex-direction: column;
-
     height: auto;
+    @media (max-width: 767px) {
+      grid-row: 1;
+    }
 
     img {
       object-fit: cover;
       height: 60vh;
       border: 6px solid $white;
       outline: 8px solid $accent;
+    }
+  }
+}
+.apartmani--gallery {
+  background-color: rgba($accent, 0.8);
+  padding: 5em 10vw;
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5em;
+
+    img {
+      height: 180px;
+      object-fit: cover;
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }

@@ -12,6 +12,9 @@
   animation: 2s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
+  @media only screen and (max-width: 920px) {
+    bottom: 10%;
+  }
   h2 {
     color: rgba($white, 0.7);
   }
