@@ -1,4 +1,33 @@
-.destinacija__hero {
+/* crni header start */
+body#destinacija-sr {
+  .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: $white;
+    & img.logo-crni {
+      display: none;
+    }
+    nav ul li a {
+      color: $white;
+    }
+    &.fixed-header {
+      background-color: rgba($white, 1);
+      color: $dark-gray;
+      & img.logo-beli {
+        display: none;
+      }
+      & img.logo-crni {
+        display: initial;
+      }
+      nav ul li a {
+        color: $dark-dark-gray;
+      }
+    }
+  }
+}
+/* crni header end*/
+
+.destinacija-img1,
+.destinacija-img2 {
   display: flex;
   flex-direction: column;
   img {
@@ -8,24 +37,19 @@
   }
 }
 
-.destinacija__text {
+.destinacija-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100vh;
-  background-color: $white;
-  color: $dark-dark-gray;
-  padding: 6em 10%;
+  background-color: $accent;
+  color: $white;
   text-align: center;
-  h1 {
-    color: $accent;
-    margin-bottom: 1em;
+  & .destinacija__text {
+    max-width: 50em;
   }
-}
-body#destinacija-sr {
-  nav ul li a {
-    color: $white;
+  h1 {
+    margin-bottom: 1em;
   }
 }
