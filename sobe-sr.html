@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Kala apartmani</title>
+    <title>Sobe</title>
     <link
       href="css/bootstrap-datepicker3.standalone.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
 
     <script src="js/phobs.js"></script>
     <script
@@ -19,7 +24,7 @@
     ></script>
   </head>
 
-  <body id="kontakt-sr">
+  <body id="sobe-sr">
     <!-- header start -->
     <header class="header">
       <!-- hamburger -->
@@ -41,12 +46,16 @@
           <li><a href="sobe-sr.html">Sobe</a></li>
           <li class="logo">
             <a href="index.html" class="logo-link">
-              <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
+              <img
+                src="img/logo/kala-logo.png"
+                alt="Kala apartmani logo crni"
+                class="logo-crni"
+              />
             </a>
           </li>
           <li><a href="destinacija-sr.html">Destinacija</a></li>
           <li><a href="specijalne-ponude-sr.html">Specijalne ponude</a></li>
-          <li><a href="/kontakt-sr.html">Kontakt</a></li>
+          <li><a href="kontakt-sr.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -183,55 +192,150 @@
     </section>
     <!-- booking end -->
 
-    <!-- HERO -->
-    <section class="kontakt">
-      <div class="container">
-        <h1 class="kontakt-title">Kontaktirajte nas</h1>
-        <div class="kontakt__grid">
-          <div class="kontakt__forma">
-            <form action="php/email.php" method="post">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="ime i prezime"
-              />
-              <input type="email" name="email" id="email" placeholder="email" />
-              <textarea
-                placeholder="Poruka"
-                name="poruka"
-                id="poruka"
-              ></textarea>
-              <input type="submit" class="btn btn-primary" />
-            </form>
-            <div class="address__box">
-              <h3 class="address__title">Kontakt</h3>
-              <p class="address__text">
-                Adresa: Ulica 14, br. 9<br />
-                Budva, Crna gora<br />
-                Tel: +382 67 281869<br />
-                Email:
-                <a href="mailto:welcome@kalabudva.me">welcome@kalabudva.me</a>
-              </p>
-            </div>
+    <!-- SOBE -->
+    <section class="sobe">
+      <!-- <h1 class="sobe__title">SOBE</h1> -->
+      <div class="soba soba__levo">
+        <img src="img/jednosoban/1.jpg" alt="jednosoba apartman" />
+        <div class="soba__text">
+          <h1>Apartman sa jednom spavaćom sobom</h1>
+          <p>
+            Apartman je veličine 37m² nalazi se na prvom i drugom spratu,
+            raspolaže sa spavaćom sobom sa francuskim ležajem, dnevnim boravkom
+            sa sofom, tarasom, kuhinjom, frižiderom, šporetom, klima uređajem,
+            kupatilom sa tušem, fenom, daskom za peglanje, peglom, Wi-Fi,
+            Samsung Smart TV 50 inča sa velikim izborom kablovskih kanala, Air
+            playmod streaming sa iPhone-a, Netflix, HBO Go. Balkon. Pogled na
+            grad.
+          </p>
+        </div>
+      </div>
+      <div class="soba soba__desno">
+        <div class="soba__text">
+          <h1>Studio apartman bijeli</h1>
+          <p>
+            Studio apartman veličine je 31m², nalazi se na drugom spratu,
+            raspolaže spavaćom sobom sa francuskim ležajem, sofom, tarasom,
+            kuhinjom, frižiderom, šporetom, mikrotalasnom, klima, kupatilom sa
+            tušem, fenom, daskom za peglanje, peglom, WI-FI, Samsung Smart TV 50
+            inča sa velikim izborom kablovskih kanala, Air playmod streaming sa
+            iPhone-a, Netflix, HBO Go. Balkon. Pogled na prirodu.
+          </p>
+        </div>
+        <img src="img/studio/1.jpg" alt="studio apartman bijeli" />
+      </div>
+      <div class="soba soba__levo">
+        <img src="img/studio/1.jpg" alt="studio apartman žuti" />
+        <div class="soba__text">
+          <h1>Studio apartman žuti</h1>
+          <p>
+            Studio apartman veličine je 31m², nalazi se na prvom spratu,
+            raspolaže spavaćom sobom sa francuskim ležajem, sofom, tarasom,
+            kuhinjom, frižiderom, šporetom, mikrotalasnom, klima, kupatilom sa
+            tušem, fenom, daskom za peglanje, peglom, WI-FI, Samsung Smart TV 50
+            inča sa velikim izborom kablovskih kanala, Air playmod streaming sa
+            iPhone-a, Netflix, HBO Go. Balkon. Pogled na prirodu.
+          </p>
+        </div>
+      </div>
+      <div class="soba soba__desno">
+        <div class="soba__text">
+          <h1>Superior dvokrevetna soba</h1>
+          <p>
+            Dvokrevetna soba veličine je 25m² nalazi se na prvom i drugom spratu
+            raspolaže sa francuskim ležajem, foteljom, tarasom, mini frižiderom,
+            klima, kupatilom sa tušem, fenom, zajedničkom mini kuhinjom, WI-FI,
+            LG smart TV 55 inča sa velikim izborom kablovskih kanala, Netflix,
+            HBO Go. Balkon. Pogled na grad.
+          </p>
+        </div>
+        <img src="img/superior/1.jpg" alt="superior dvokrevetna soba" />
+      </div>
+      <div class="soba soba__levo">
+        <img src="img/standard/1.jpg" alt="jednosoba apartman" />
+        <div class="soba__text">
+          <h1>Standardna dvokrevetna soba</h1>
+          <p>
+            Dvokrevetna soba veličine je 16m² nalazi se na prvom i drugom spratu
+            raspolaže sa francuskim ležajem, mini frižiderom, kupatilom sa
+            tušem, fenom, zajedničkom mini kuhinjom, Klima, WI-FI, Samsung smart
+            TV 43 inča sa velikim izborom kablovskih kanala, Air playmod
+            streaming sa iPhone-a Netflix, HBO Go. Pogled na grad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sobe dodatno start -->
+
+    <section class="sobe-udaljenost">
+      <div class="soba__udaljenost">
+        <div class="udaljenost">
+          <p>Udaljenost do autobustke stanice</p>
+          <h3>750m</h3>
+        </div>
+      </div>
+      <div class="soba__udaljenost">
+        <div class="udaljenost">
+          <p>Udaljenost do plaže</p>
+          <h3>800m</h3>
+        </div>
+      </div>
+      <div class="soba__udaljenost">
+        <div class="udaljenost">
+          <p>Udaljenost do Starog grada</p>
+          <h3>1,5km</h3>
+        </div>
+      </div>
+      <div class="soba__udaljenost span3">
+        <div class="udaljenost">
+          <p>Udaljenost do prodavnica:</p>
+          <div class="udaljenost__prodavnice">
+            <p>Market Boka <span>130m</span></p>
+            <p>Market Mega <span>350m</span></p>
+            <p>Market Mega (24h) <span>350m</span></p>
+            <p>Apoteka Benu <span>200m</span></p>
           </div>
         </div>
       </div>
     </section>
-    <!-- mapa -->
-    <section class="mapa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.8247510746196!2d18.84670019702273!3d42.28600470307863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd485b3d9ac51%3A0xd8299ed09f9e123f!2z0JHRg9C00LLQsNC90YHQutCwINGA0LjQstC40ZjQtdGA0LA!5e0!3m2!1ssr!2srs!4v1596133828477!5m2!1ssr!2srs"
-        width="100%"
-        height="450"
-        frameborder="0"
-        style="border: 0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
+    <section class="sobe-dodatno">
+      <div class="sobe__dodatno">
+        <div class="sobe__dodatno-text">
+          <ul>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>Parking mjesto u garaži potrebna
+              rezervacija uz doplatu
+            </li>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>Životinje nisu dozvoljene
+            </li>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>Posteljina se menja na 3 dana, peškiri
+              mogu i češće po potrebi
+            </li>
+          </ul>
+        </div>
+        <div class="sobe__dodatno-text">
+          <ul>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>U saradnji sa partnerskom agencijom
+              obezbeđujemo rent-a-car / scooter
+            </li>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>Transfer od i do aerodroma/autobuske
+              stanice/voza je omogućen, uz doplatu
+            </li>
+            <li class="sobe-lista">
+              <i class="fas fa-check"></i>Sa nama možete komunicirati na
+              srpski/engleski/francuski
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <!-- mapa end -->
+
+    <!-- sobe dodatno end -->
 
     <!-- footer -->
     <footer>
@@ -297,6 +401,9 @@
     <script type="text/javascript" src="js/jPushMenu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/kala.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
     <script>
       $('.from_date .datepicker').on('changeDate', function (ev) {
         var elm = jQuery(this);

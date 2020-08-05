@@ -50,7 +50,7 @@ body#o-apartmanima-sr {
       object-fit: cover;
       height: 60vh;
       border: 6px solid $white;
-      outline: 8px solid $accent;
+      outline: 8px solid $light-gray;
     }
   }
 }
@@ -59,13 +59,16 @@ body#o-apartmanima-sr {
   padding: 5em 10vw;
   .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0.5em;
-
-    img {
-      height: 180px;
-      object-fit: cover;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+    .gallery__img {
       overflow: hidden;
+      border: 3px solid rgba($white, 0.5);
+      height: 200px;
+    }
+    img {
+      height: 200px;
+      object-fit: cover;
       transition: transform 0.3s;
       cursor: pointer;
       &:hover {

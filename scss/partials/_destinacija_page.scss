@@ -1,0 +1,55 @@
+/* crni header start */
+body#destinacija-sr {
+  .header {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: $white;
+    & img.logo-crni {
+      display: none;
+    }
+    nav ul li a {
+      color: $white;
+    }
+    &.fixed-header {
+      background-color: rgba($white, 1);
+      color: $dark-gray;
+      & img.logo-beli {
+        display: none;
+      }
+      & img.logo-crni {
+        display: initial;
+      }
+      nav ul li a {
+        color: $dark-dark-gray;
+      }
+    }
+  }
+}
+/* crni header end*/
+
+.destinacija-img1,
+.destinacija-img2 {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.destinacija-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $accent;
+  color: $white;
+  text-align: center;
+  & .destinacija__text {
+    max-width: 50em;
+  }
+  h1 {
+    margin-bottom: 1em;
+  }
+}

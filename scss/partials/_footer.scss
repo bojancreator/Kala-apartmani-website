@@ -19,12 +19,13 @@ footer {
     }
   }
   @media only screen and (max-width: 733px) {
-   .logo-footer {
-     display: none;
-   }
+    .logo-footer {
+      display: none;
+    }
   }
   .logo-footer img {
     height: 130px;
+    width: auto;
   }
   .menu-footer {
     line-height: 1.7em;
@@ -54,6 +55,9 @@ footer {
       &:focus {
         opacity: 0.8;
       }
+    }
+    a i.fa-instagram-square {
+      margin-left: 0;
     }
   }
   .kontakt-footer {
