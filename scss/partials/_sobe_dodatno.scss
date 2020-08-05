@@ -37,12 +37,14 @@
     span {
       font-family: $ff-ss;
       font-size: 2em;
+      text-transform: none;
     }
   }
 
   h3 {
     font-size: 2em;
     margin-top: 0.5em;
+    text-transform: none;
   }
   .udaljenost__prodavnice {
     width: 100%;
@@ -68,6 +70,7 @@
       display: block;
       line-height: 2.5em;
       font-weight: normal;
+      text-transform: none;
     }
   }
 }
@@ -79,7 +82,31 @@
 }
 .sobe__dodatno {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   width: 100%;
+  flex-wrap: wrap;
+  /*   @media (max-width: 1160px) {
+    justify-content: flex-start;
+  } */
+}
+
+.sobe__dodatno-text {
+  flex-basis: 550px;
+  width: 100%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.sobe-lista {
+  list-style-type: none;
+  text-indent: -2em;
+  margin-left: 1em;
+  padding-left: 1em;
+  margin-top: 0.7em;
+
+  .fas {
+    color: $accent;
+    margin-left: 1.5em;
+    padding-left: 0.5em;
+  }
 }

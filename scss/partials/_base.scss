@@ -164,3 +164,8 @@ iframe {
 img {
   width: 100%;
 }
+
+[href='specijalne-ponude-sr.html'] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
