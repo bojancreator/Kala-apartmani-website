@@ -1,0 +1,85 @@
+.sobe-udaljenost {
+  background-color: $accent;
+  padding: 5em 10%;
+  color: $white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  .span3 {
+    grid-column: 1 / 4;
+    @media (max-width: 500px) {
+      grid-column: unset;
+    }
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.soba__udaljenost {
+  border: 1px solid rgba($white, 0.5);
+  padding: 1em;
+}
+
+.udaljenost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1em;
+  //padding: 1em;
+  p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    line-height: 1;
+    span {
+      font-family: $ff-ss;
+      font-size: 2em;
+    }
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+  .udaljenost__prodavnice {
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: space-around;
+    // flex-basis: 200px;
+
+    p {
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /*  p > * {
+      flex-basis: calc(250px - 100%);
+      flex-grow: 1;
+    } */
+    span {
+      display: block;
+      line-height: 2.5em;
+      font-weight: normal;
+    }
+  }
+}
+
+.sobe-dodatno {
+  background-color: $light-gray;
+  min-width: 100%;
+  padding: 2em 5%;
+}
+.sobe__dodatno {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
