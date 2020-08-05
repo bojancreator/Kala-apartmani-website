@@ -1553,7 +1553,7 @@ body#destinacija-sr .header.fixed-header nav ul li a {
 
 .soba {
   display: grid;
-  height: auto;
+  height: 600px;
 }
 
 .soba img {
