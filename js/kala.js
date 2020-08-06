@@ -4,7 +4,7 @@ Should be equal the the height of the header
 ========================================== */
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 200) {
+  if ($(window).scrollTop() >= 134) {
     $('header').addClass('fixed-header');
     $('header div').addClass('visible-title');
   } else {
