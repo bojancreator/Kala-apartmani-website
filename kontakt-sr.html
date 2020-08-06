@@ -189,6 +189,7 @@
         <h1 class="kontakt-title">Kontaktirajte nas</h1>
         <div class="kontakt__grid">
           <div class="kontakt__forma">
+            <h4 class="sent-notification"></h4>
             <form id="myContactForm">
               <input id="name" type="text" placeholder="ime i prezime" />
               <input id="email" type="text" placeholder="email" />
@@ -205,7 +206,7 @@
                 onclick="sendEmail()"
                 value="Send An Email"
               >
-                Submit
+                Pošalji
               </button>
             </form>
             <div class="address__box">
@@ -369,7 +370,7 @@
 
       function isNotEmpty(caller) {
         if (caller.val() == '') {
-          caller.css('border', '1px solid red');
+          caller.css('border', '2px solid red');
           return false;
         } else caller.css('border', '');
 

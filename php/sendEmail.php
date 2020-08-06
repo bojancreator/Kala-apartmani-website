@@ -18,7 +18,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail->Host = "mail.kalabudva.me";
     $mail->SMTPAuth = true;
     $mail->Username = "welcome@kalabudva.me";
-    $mail->Password = 'yourpassword';
+    $mail->Password = 'Milan4595';
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
 
