@@ -18,8 +18,11 @@ body#destinacija-sr {
       & img.logo-crni {
         display: initial;
       }
-      nav ul li a {
+      & nav ul li a {
         color: $dark-dark-gray;
+        @media only screen and (max-width: 1023px) {
+          color: $white;
+        }
       }
     }
   }

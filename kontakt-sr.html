@@ -189,22 +189,25 @@
         <h1 class="kontakt-title">Kontaktirajte nas</h1>
         <div class="kontakt__grid">
           <div class="kontakt__forma">
-            <form action="php/email.php" method="post">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="ime i prezime"
-              />
-              <input type="email" name="email" id="email" placeholder="email" />
+            <h4 class="sent-notification"></h4>
+            <form id="myContactForm">
+              <input id="name" type="text" placeholder="ime i prezime" />
+              <input id="email" type="text" placeholder="email" />
+              <input id="subject" type="text" placeholder="Tema poruke" />
               <textarea
-                rows="4"
-                cols="50"
+                id="body"
+                rows="5"
                 placeholder="Poruka"
                 name="poruka"
-                id="poruka"
               ></textarea>
-              <input type="submit" class="btn btn-primary" />
+              <button
+                class="btn btn-primary"
+                type="button"
+                onclick="sendEmail()"
+                value="Send An Email"
+              >
+                Pošalji
+              </button>
             </form>
             <div class="address__box">
               <h3 class="address__title">Kontakt</h3>
@@ -331,6 +334,48 @@
           .find('.check_out_year')
           .val(ev.date.getFullYear());
       });
+    </script>
+
+    <!-- php kontakt forma -->
+    <script type="text/javascript">
+      function sendEmail() {
+        var name = $('#name');
+        var email = $('#email');
+        var subject = $('#subject');
+        var body = $('#body');
+
+        if (
+          isNotEmpty(name) &&
+          isNotEmpty(email) &&
+          isNotEmpty(subject) &&
+          isNotEmpty(body)
+        ) {
+          $.ajax({
+            url: '../php/sendEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+              name: name.val(),
+              email: email.val(),
+              subject: subject.val(),
+              body: body.val(),
+            },
+            success: function (response) {
+              $('#myContactForm')[0].reset();
+              $('.sent-notification').text('Message Sent Successfully.');
+            },
+          });
+        }
+      }
+
+      function isNotEmpty(caller) {
+        if (caller.val() == '') {
+          caller.css('border', '2px solid red');
+          return false;
+        } else caller.css('border', '');
+
+        return true;
+      }
     </script>
   </body>
 </html>
