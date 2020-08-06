@@ -42,6 +42,7 @@ body#o-apartmanima-sr {
     display: flex;
     flex-direction: column;
     height: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     @media (max-width: 767px) {
       grid-row: 1;
     }
@@ -49,8 +50,9 @@ body#o-apartmanima-sr {
     img {
       object-fit: cover;
       height: 60vh;
-      border: 6px solid $white;
-      outline: 8px solid $light-gray;
+      //border: 3px solid $white;
+      outline: 1px solid $light-gray;
+      outline-offset: -12px;
     }
   }
 }
