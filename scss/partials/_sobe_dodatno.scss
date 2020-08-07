@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  grid-gap: 1em;
   .span3 {
     grid-column: 1 / 4;
     @media (max-width: 500px) {

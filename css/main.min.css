@@ -1326,7 +1326,7 @@ body#kontakt-sr {
   height: 100vh;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .kontakt {
     height: auto;
   }
@@ -1668,6 +1668,7 @@ body#destinacija-sr .header.fixed-header nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  grid-gap: 1em;
 }
 
 .sobe-udaljenost .span3 {
