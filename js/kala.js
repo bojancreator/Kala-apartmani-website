@@ -40,3 +40,42 @@ bookBtn.addEventListener('click', () => {
     bookOpen = false;
   }
 });
+
+/*========== DATE PICKER ==========*/
+$(document).ready(function () {
+  /*========== DATE PICKER ==========*/
+  $('.datepicker').datepicker({
+    format: 'dd/mm/yyyy', //Set Date Format
+    startDate: new Date(), //Set Min Date Today
+    endDate: '18/12/2020', //Set Max Date
+    datesDisabled: ['16/01/2017', '17/01/2017', '30/01/2017'], //Set Disabled Dates
+    autoclose: true,
+    todayHighlight: true,
+  });
+});
+
+$('.from_date .datepicker').on('changeDate', function (ev) {
+  var elm = jQuery(this);
+
+  tommorrow = ev.date;
+  tommorrow.setDate(tommorrow.getDate());
+  jQuery('.to_date .datepicker').datepicker('setDate', tommorrow);
+
+  elm.parents('.from_date').find('.check_in_day').val(ev.date.getDate());
+  elm
+    .parents('.from_date')
+    .find('.check_in_month')
+    .val(ev.date.getMonth() + 1);
+  elm.parents('.from_date').find('.check_in_year').val(ev.date.getFullYear());
+});
+
+$('.to_date .datepicker').on('changeDate', function (ev) {
+  var elm = jQuery(this);
+
+  elm.parents('.to_date').find('.check_out_day').val(ev.date.getDate());
+  elm
+    .parents('.to_date')
+    .find('.check_out_month')
+    .val(ev.date.getMonth() + 1);
+  elm.parents('.to_date').find('.check_out_year').val(ev.date.getFullYear());
+});
