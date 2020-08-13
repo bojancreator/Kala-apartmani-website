@@ -1,141 +1,82 @@
 <!DOCTYPE html>
 <html lang="sr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Kala apartmani</title>
-    <link
-      href="css/bootstrap-datepicker3.standalone.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
 
-  <body id="home-sr">
-    <!-- header start -->
-    <header class="header">
-      <!-- hamburger -->
-      <div class="header-mobilni">
-        <img
-          class="logo-mobilni"
-          src="img/logo/kala-logo.png"
-          alt="logo mobilni"
-        />
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Kala apartmani</title>
+  <link href="css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body id="home-sr">
+  <!-- header start -->
+  <header class="header">
+    <!-- hamburger -->
+    <div class="header-mobilni">
+      <img class="logo-mobilni" src="img/logo/kala-logo.png" alt="logo mobilni" />
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
       </div>
-      <!-- hamburger end -->
+    </div>
+    <!-- hamburger end -->
 
-      <nav class="navigation">
-        <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-apartmanima-sr.html">O apartmanima</a></li>
-          <li><a href="sobe-sr.html">Sobe</a></li>
-          <li class="logo">
-            <a href="index.html" class="logo-link">
-              <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
-            </a>
-          </li>
-          <li><a href="destinacija-sr.html">Destinacija</a></li>
-          <li>
-            <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
-          </li>
-          <li><a href="kontakt-sr.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- header end -->
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="o-apartmanima-sr.html">O apartmanima</a></li>
+        <li><a href="sobe-sr.html">Sobe</a></li>
+        <li class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
+          </a>
+        </li>
+        <li><a href="destinacija-sr.html">Destinacija</a></li>
+        <li>
+          <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
+        </li>
+        <li><a href="kontakt-sr.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
 
-    <!-- booking start -->
-    <section class="booking">
-      <div class="container">
-        <div class="book-btn">
-          <i class="fas fa-sort-amount-up-alt"></i>
-          <i class="fas fa-times"></i>
+  <!-- booking start -->
+  <section class="booking">
+    <div class="container">
+      <div class="book-btn">
+        <i class="fas fa-sort-amount-up-alt"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <h2>Rezervaciona forma</h2>
+
+      <form action="https://secure.phobs.net/booking.php" method="get" id="phobs_book" name="phobs_book"
+        class="booking__forma" target="_blank">
+        <input name="hotel" type="hidden" value="f6e540ff6a059c219039032332881124" style="display: none;" />
+        <div class="form_date from_date">
+          <label>Dolazak</label>
+          <input class="check_in_day" name="check_in_day" type="hidden" value="" />
+          <input class="check_in_month" name="check_in_month" type="hidden" value="" />
+          <input class="check_in_year" name="check_in_year" type="hidden" value="" />
+          <input class="datepicker form-control" name="booking-checkin" readonly="readonly" type="text"
+            placeholder="Arrival Date" class="fa fa-calendar" />
+          <i class="fa fa-calendar" aria-hidden="true"></i>
         </div>
-        <h2>Rezervaciona forma</h2>
+        <div class="form_date to_date departure">
+          <label>Odlazak</label>
 
-        <form
-          action="https://secure.phobs.net/booking.php"
-          method="get"
-          id="phobs_book"
-          name="phobs_book"
-          class="booking__forma"
-          target="_blank"
-        >
-          <input
-            name="hotel"
-            type="hidden"
-            value="f6e540ff6a059c219039032332881124"
-            style="display: none;"
-          />
-          <div class="form_date from_date">
-            <label>Dolazak</label>
-            <input
-              class="check_in_day"
-              name="check_in_day"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="check_in_month"
-              name="check_in_month"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="check_in_year"
-              name="check_in_year"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="datepicker form-control"
-              name="booking-checkin"
-              readonly="readonly"
-              type="text"
-              placeholder="Arrival Date"
-              class="fa fa-calendar"
-            />
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-          </div>
-          <div class="form_date to_date departure">
-            <label>Odlazak</label>
-
-            <input
-              class="check_out_day"
-              name="check_out_day"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="check_out_month"
-              name="check_out_month"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="check_out_year"
-              name="check_out_year"
-              type="hidden"
-              value=""
-            />
-            <input
-              class="datepicker form-control"
-              name="booking-checkout"
-              readonly="readonly"
-              type="text"
-              placeholder="Departure Date"
-            /><i class="fa fa-calendar" aria-hidden="true"></i>
-          </div>
-          <!--           <div class="form-group">
+          <input class="check_out_day" name="check_out_day" type="hidden" value="" />
+          <input class="check_out_month" name="check_out_month" type="hidden" value="" />
+          <input class="check_out_year" name="check_out_year" type="hidden" value="" />
+          <input class="datepicker form-control" name="booking-checkout" readonly="readonly" type="text"
+            placeholder="Departure Date" /><i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+        <!--           <div class="form-group">
             <label>Pristupni ključ (opciono)</label>
             <input
               name="partners_access"
@@ -144,325 +85,260 @@
               placeholder="Access Key"
             />
           </div> -->
-          <div class="form-button-group">
-            <label class="booking-label">&nbsp;</label>
-            <button type="submit" class="btn btn-primary">
-              Rezerviši
-            </button>
-            <input
-              name="company_id"
-              type="hidden"
-              value="3ee86bd97786d3f1b4636072a4ba8450"
-              style="display: none;"
-            />
-            <input
-              name="view_cancel"
-              type="hidden"
-              value=""
-              style="display: none;"
-            />
-            <input
-              name="lang"
-              type="hidden"
-              value="me"
-              style="display: none;"
-            />
-            <div class="advanced_form_link">
-              <a
-                href="https://secure.phobs.net/booking.php?company_id=3ee86bd97786d3f1b4636072a4ba8450&amp;lang=me&amp;view_cancel=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="view_cancel"
-                onclick="return viewCancelBooking(this)"
-              >
-                Izmeni/Otkaži rezervaciju
-              </a>
-            </div>
+        <div class="form-button-group">
+          <label class="booking-label">&nbsp;</label>
+          <button type="submit" class="btn btn-primary">
+            Rezerviši
+          </button>
+          <input name="company_id" type="hidden" value="3ee86bd97786d3f1b4636072a4ba8450" style="display: none;" />
+          <input name="view_cancel" type="hidden" value="" style="display: none;" />
+          <input name="lang" type="hidden" value="me" style="display: none;" />
+          <div class="advanced_form_link">
+            <a href="https://secure.phobs.net/booking.php?company_id=3ee86bd97786d3f1b4636072a4ba8450&amp;lang=me&amp;view_cancel=1"
+              target="_blank" rel="noopener noreferrer" class="view_cancel" onclick="return viewCancelBooking(this)">
+              Izmeni/Otkaži rezervaciju
+            </a>
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- booking end -->
-
-    <!-- HERO -->
-    <div class="hero">
-      <img src="img/slikanaslovna-med.jpg" alt="" class="hero-img" />
-      <div class="intro__text">
-        <h2>U blizini Slovenske plaže<br />daleko od saobraćajne buke</h2>
-      </div>
+        </div>
+      </form>
     </div>
+  </section>
+  <!-- booking end -->
 
-    <!-- o hotelu start -->
-    <section class="about__us">
-      <div class="about-us-box">
-        <div class="image">
-          <img src="img/studio/16.jpg" alt="" class="about-us" />
-        </div>
-        <div class="about-us-text">
-          <h2 class="about-title">Kala apartmani</h2>
-          <p>
-            Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko
-            od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža
-            i istoimene, najpopularnije Budvanske plaže.
-          </p>
-          <p>
-            Zbog svoje lokacije i blizine plaže idealni su za porodice sa decom,
-            takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže
-            se do popularnih mesta za provod, restorana, kafića, diskoteka…
-          </p>
-          <button
-            class="btn btn-text"
-            onclick="document.location='o-apartmanima-sr.html'"
-          >
-            Više informacija...
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- o hotelu end -->
+  <!-- HERO -->
+  <div class="hero">
+    <img src="img/slikanaslovna-med.jpg" alt="" class="hero-img" />
+    <div class="intro__text">
+      <h2>U blizini Slovenske plaže<br />daleko od saobraćajne buke</h2>
+    </div>
+  </div>
 
-    <!-- sobe -->
-    <section class="sobe__home">
-      <h2>SMEŠTAJ</h2>
-      <div class="container">
-        <figure class="jednosoban">
-          <img
-            src="img/jednosoban/1.jpg"
-            alt="jednosoban apartman"
-            class="sobe-img"
-          />
-          <figcaption>Jednosoban apartman</figcaption>
-          <p>
-            Apartman je veličine 37 m² nalazi se na prvom i drugom spratu.
-          </p>
-          <button
-            class="btn btn-primary"
-            onclick="document.location='#jednosoban-sr'"
-          >
-            Rezerviši
-          </button>
-        </figure>
-        <figure class="standard">
-          <img
-            src="img/standard/1.jpg"
-            alt="standard dvokrevetni apartman"
-            class="sobe-img"
-          />
-          <figcaption>Standardna dvokrevetna soba</figcaption>
-          <p>
-            Dvokrevetna soba veličine je 16 m² nalazi se na prvom i drugom
-            spratu.
-          </p>
-          <button
-            class="btn btn-primary"
-            onclick="document.location='standard-sr'"
-          >
-            Rezerviši
-          </button>
-        </figure>
-        <figure class="superior">
-          <img
-            src="img/superior/1.jpg"
-            alt="superior dvokrevetni apartman"
-            class="sobe-img"
-          />
-          <figcaption>Superior dvokrevetna soba</figcaption>
-          <p>
-            Dvokrevetna soba veličine je 25 m² nalazi se na prvom i drugom
-            spratu.
-          </p>
-          <button
-            class="btn btn-primary"
-            onclick="document.location='superior-sr'"
-          >
-            Rezerviši
-          </button>
-        </figure>
-        <figure class="studio">
-          <img src="img/studio/1.jpg" alt="studio" class="sobe-img" />
-          <figcaption>Studio apartman</figcaption>
-          <p>
-            Studio apartman veličine je 31 m², nalazi se na drugom spratu.
-          </p>
-          <button
-            class="btn btn-primary"
-            onclick="document.location='studio-sr'"
-          >
-            Rezerviši
-          </button>
-        </figure>
+  <!-- o hotelu start -->
+  <section class="about__us">
+    <div class="about-us-box">
+      <div class="image">
+        <img src="img/studio/16.jpg" alt="" class="about-us" />
       </div>
-    </section>
-    <!-- sobe end -->
-
-    <!-- sobe dodatno start -->
-    <section class="sobe-udaljenost">
-      <div class="soba__udaljenost">
-        <div class="udaljenost">
-          <p>Udaljenost do autobustke stanice</p>
-          <h3>750m</h3>
-        </div>
-      </div>
-      <div class="soba__udaljenost">
-        <div class="udaljenost">
-          <p>Udaljenost do plaže</p>
-          <h3>800m</h3>
-        </div>
-      </div>
-      <div class="soba__udaljenost">
-        <div class="udaljenost">
-          <p>Udaljenost do Starog grada</p>
-          <h3>1,5km</h3>
-        </div>
-      </div>
-      <div class="soba__udaljenost span3">
-        <div class="udaljenost">
-          <p>Udaljenost do prodavnica:</p>
-          <div class="udaljenost__prodavnice">
-            <p>Market Boka <span>130m</span></p>
-            <p>Market Mega <span>350m</span></p>
-            <p>Market Mega (24h) <span>350m</span></p>
-            <p>Apoteka Benu <span>200m</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sobe-dodatno">
-      <div class="sobe__dodatno">
-        <div class="sobe__dodatno-text">
-          <ul>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>Parking mjesto u garaži potrebna
-              rezervacija uz doplatu
-            </li>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>Životinje nisu dozvoljene
-            </li>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>Posteljina se menja na 3 dana, peškiri
-              mogu i češće po potrebi
-            </li>
-          </ul>
-        </div>
-        <div class="sobe__dodatno-text">
-          <ul>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>U saradnji sa partnerskom agencijom
-              obezbeđujemo rent-a-car / scooter
-            </li>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>Transfer od i do aerodroma/autobuske
-              stanice/voza je omogućen, uz doplatu
-            </li>
-            <li class="sobe-lista">
-              <i class="fas fa-check"></i>Sa nama možete komunicirati na
-              srpski/engleski/francuski
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- sobe dodatno end -->
-
-    <!-- destinacija start -->
-    <section class="destinacija">
-      <div class="dest-img">
-        <img src="img/destinacija/destinacija3.jpg" alt="destinacija-sr" />
-      </div>
-      <div class="container-dest">
-        <h2 class="destinacija-title">Destinacija</h2>
+      <div class="about-us-text">
+        <h2 class="about-title">Kala apartmani</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam
-          praesentium itaque culpa ullam molestiae autem odio ipsum aliquam!
-          Velit labore enim vel eos similique, modi magnam in tenetur officia?
+          Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko
+          od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža
+          i istoimene, najpopularnije Budvanske plaže.
         </p>
-        <button
-          class="btn btn-secondary"
-          onclick="document.location='destinacija-sr.html'"
-        >
-          Više informacija
+        <p>
+          Zbog svoje lokacije i blizine plaže idealni su za porodice sa decom,
+          takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže
+          se do popularnih mesta za provod, restorana, kafića, diskoteka…
+        </p>
+        <button class="btn btn-text" onclick="document.location='o-apartmanima-sr.html'">
+          Više informacija...
         </button>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- o hotelu end -->
 
-    <!-- destinacija end -->
+  <!-- sobe -->
+  <section class="sobe__home">
+    <h2>SMEŠTAJ</h2>
+    <div class="container">
+      <figure class="jednosoban">
+        <img src="img/jednosoban/1.jpg" alt="jednosoban apartman" class="sobe-img" />
+        <figcaption>Jednosoban apartman</figcaption>
+        <p>
+          Apartman je veličine 37 m² nalazi se na prvom i drugom spratu.
+        </p>
+        <button class="btn btn-primary" onclick="document.location='#jednosoban-sr'">
+          Rezerviši
+        </button>
+      </figure>
+      <figure class="standard">
+        <img src="img/standard/1.jpg" alt="standard dvokrevetni apartman" class="sobe-img" />
+        <figcaption>Standardna dvokrevetna soba</figcaption>
+        <p>
+          Dvokrevetna soba veličine je 16 m² nalazi se na prvom i drugom
+          spratu.
+        </p>
+        <button class="btn btn-primary" onclick="document.location='standard-sr'">
+          Rezerviši
+        </button>
+      </figure>
+      <figure class="superior">
+        <img src="img/superior/1.jpg" alt="superior dvokrevetni apartman" class="sobe-img" />
+        <figcaption>Superior dvokrevetna soba</figcaption>
+        <p>
+          Dvokrevetna soba veličine je 25 m² nalazi se na prvom i drugom
+          spratu.
+        </p>
+        <button class="btn btn-primary" onclick="document.location='superior-sr'">
+          Rezerviši
+        </button>
+      </figure>
+      <figure class="studio">
+        <img src="img/studio/1.jpg" alt="studio" class="sobe-img" />
+        <figcaption>Studio apartman</figcaption>
+        <p>
+          Studio apartman veličine je 31 m², nalazi se na drugom spratu.
+        </p>
+        <button class="btn btn-primary" onclick="document.location='studio-sr'">
+          Rezerviši
+        </button>
+      </figure>
+    </div>
+  </section>
+  <!-- sobe end -->
 
-    <!-- mapa -->
-    <section class="mapa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.8247510746196!2d18.84670019702273!3d42.28600470307863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd485b3d9ac51%3A0xd8299ed09f9e123f!2z0JHRg9C00LLQsNC90YHQutCwINGA0LjQstC40ZjQtdGA0LA!5e0!3m2!1ssr!2srs!4v1596133828477!5m2!1ssr!2srs"
-        width="100%"
-        height="450"
-        frameborder="0"
-        style="border: 0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-    </section>
-    <!-- mapa end -->
-
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="bottom-box logo-footer">
-          <img src="img/logo/kala-logo-beli.png" alt="logo footer" />
-        </div>
-        <div class="bottom-box menu-footer">
-          <ul class="menu-down">
-            <li class="menu-list"><a href="index.html">Početna</a></li>
-            <li class="menu-list">
-              <a href="o-apartmanima-sr.html">O apartmanima</a>
-            </li>
-            <li class="menu-list"><a href="sobe-sr.html">Sobe</a></li>
-            <li class="menu-list">
-              <a href="destinacija-sr.html">Destinacija</a>
-            </li>
-            <li class="menu-list">
-              <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
-            </li>
-            <li class="menu-list"><a href="kontakt-sr.html">Kontakt</a></li>
-          </ul>
-        </div>
-        <div class="bottom-box social-footer">
-          <a href="#"><i class="fab fa-instagram-square"></i></a>
-          <a href="#"><i class="fab fa-twitter-square"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-        </div>
-        <div class="bottom-box kontakt-footer">
-          <h3>Kontakt</h3>
-          <p>
-            Adresa: Ulica 14, br. 9<br />
-            Budva, Crna gora<br />
-            Tel: <a href="tel:+38267281869"> +382 67 281869</a><br />
-            Email:
-            <a href="mailto:welcome@kalabudva.me"> welcome@kalabudva.me</a>
-          </p>
+  <!-- sobe dodatno start -->
+  <section class="sobe-udaljenost">
+    <div class="soba__udaljenost">
+      <div class="udaljenost">
+        <p>Udaljenost do autobustke stanice</p>
+        <h3>750m</h3>
+      </div>
+    </div>
+    <div class="soba__udaljenost">
+      <div class="udaljenost">
+        <p>Udaljenost do plaže</p>
+        <h3>800m</h3>
+      </div>
+    </div>
+    <div class="soba__udaljenost">
+      <div class="udaljenost">
+        <p>Udaljenost do Starog grada</p>
+        <h3>1,5km</h3>
+      </div>
+    </div>
+    <div class="soba__udaljenost span3">
+      <div class="udaljenost">
+        <p>Udaljenost do prodavnica:</p>
+        <div class="udaljenost__prodavnice">
+          <p>Market Boka <span>130m</span></p>
+          <p>Market Mega <span>350m</span></p>
+          <p>Market Mega (24h) <span>350m</span></p>
+          <p>Apoteka Benu <span>200m</span></p>
         </div>
       </div>
-    </footer>
-    <!-- footer end -->
-
-    <!-- copyright start -->
-    <div class="copyright">
-      ©&nbsp;MONTENEGRO&nbsp;STARS&nbsp;HOTEL&nbsp;GROUP |
-      WEB&nbsp;SYSTEM&nbsp;BY<a
-        href="https://www.emarket1ng.net"
-        target="_blank"
-        >&nbsp;EMARKET1NG.NET</a
-      >
     </div>
-    <!-- copyright end -->
-    <script
-      src="https://kit.fontawesome.com/bcdbaf081a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="js/bootstrap-datepicker.min.js"
-    ></script>
-    <script type="text/javascript" src="js/phobs.js"></script>
-    <script type="text/javascript" src="js/kala.js"></script>
-  </body>
+  </section>
+  <section class="sobe-dodatno">
+    <div class="sobe__dodatno">
+      <div class="sobe__dodatno-text">
+        <ul>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>Parking mjesto u garaži potrebna
+            rezervacija uz doplatu
+          </li>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>Životinje nisu dozvoljene
+          </li>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>Posteljina se menja na 3 dana, peškiri
+            mogu i češće po potrebi
+          </li>
+        </ul>
+      </div>
+      <div class="sobe__dodatno-text">
+        <ul>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>U saradnji sa partnerskom agencijom
+            obezbeđujemo rent-a-car / scooter
+          </li>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>Transfer od i do aerodroma/autobuske
+            stanice/voza je omogućen, uz doplatu
+          </li>
+          <li class="sobe-lista">
+            <i class="fas fa-check"></i>Sa nama možete komunicirati na
+            srpski/engleski/francuski
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- sobe dodatno end -->
+
+  <!-- destinacija start -->
+  <section class="destinacija">
+    <div class="dest-img">
+      <img src="img/destinacija/destinacija3.jpg" alt="destinacija-sr" />
+    </div>
+    <div class="container-dest">
+      <h2 class="destinacija-title">Destinacija</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam
+        praesentium itaque culpa ullam molestiae autem odio ipsum aliquam!
+        Velit labore enim vel eos similique, modi magnam in tenetur officia?
+      </p>
+      <button class="btn btn-secondary" onclick="document.location='destinacija-sr.html'">
+        Više informacija
+      </button>
+    </div>
+  </section>
+
+  <!-- destinacija end -->
+
+  <!-- mapa -->
+  <section class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5902.885333173818!2d18.841103732564463!3d42.290419083954454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIzLjciTiAxOMKwNTAnNDEuNiJF!5e0!3m2!1ssr!2srs!4v1597309434294!5m2!1ssr!2srs"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </section>
+  <!-- mapa end -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="bottom-box logo-footer">
+        <img src="img/logo/kala-logo-beli.png" alt="logo footer" />
+      </div>
+      <div class="bottom-box menu-footer">
+        <ul class="menu-down">
+          <li class="menu-list"><a href="index.html">Početna</a></li>
+          <li class="menu-list">
+            <a href="o-apartmanima-sr.html">O apartmanima</a>
+          </li>
+          <li class="menu-list"><a href="sobe-sr.html">Sobe</a></li>
+          <li class="menu-list">
+            <a href="destinacija-sr.html">Destinacija</a>
+          </li>
+          <li class="menu-list">
+            <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
+          </li>
+          <li class="menu-list"><a href="kontakt-sr.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="bottom-box social-footer">
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+      </div>
+      <div class="bottom-box kontakt-footer">
+        <h3>Kontakt</h3>
+        <p>
+          Adresa: Ulica 14, br. 9<br />
+          Budva, Crna gora<br />
+          Tel: <a href="tel:+3826116116"> +382 67 116116</a><br />
+          Email:
+          <a href="mailto:welcome@kalabudva.me"> welcome@kalabudva.me</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- copyright start -->
+  <div class="copyright">
+    ©&nbsp;MONTENEGRO&nbsp;STARS&nbsp;HOTEL&nbsp;GROUP |
+    WEB&nbsp;SYSTEM&nbsp;BY<a href="https://www.emarket1ng.net" target="_blank">&nbsp;EMARKET1NG.NET</a>
+  </div>
+  <!-- copyright end -->
+  <script src="https://kit.fontawesome.com/bcdbaf081a.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="js/phobs.js"></script>
+  <script type="text/javascript" src="js/kala.js"></script>
+</body>
+
 </html>
