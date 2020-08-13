@@ -247,7 +247,7 @@
         <img src="img/standard/1.jpg" alt="jednosoba apartman" />
       </div>
 
-      <div class="soba soba__levo">
+      <!--       <div class="soba soba__levo">
         <div class="soba__gallery">
           <div class="soba__gallery__images">
             <img
@@ -289,6 +289,37 @@
           </div>
         </div>
 
+        <div class="soba__text">
+          <h1>Apartman sa jednom spavaćom sobom</h1>
+          <p>
+            Apartman je veličine 37m² nalazi se na prvom i drugom spratu,
+            raspolaže sa spavaćom sobom sa francuskim ležajem, dnevnim boravkom
+            sa sofom, tarasom, kuhinjom, frižiderom, šporetom, klima uređajem,
+            kupatilom sa tušem, fenom, daskom za peglanje, peglom, Wi-Fi,
+            Samsung Smart TV 50 inča sa velikim izborom kablovskih kanala, Air
+            playmod streaming sa iPhone-a, Netflix, HBO Go. Balkon. Pogled na
+            grad.
+          </p>
+        </div>
+      </div> -->
+      <div class="soba soba__levo">
+        <div class="soba__galerija">
+          <img src="img/jednosoban/1.jpg" id="slider1" />
+          <ul class="gallery__navigation">
+            <li onclick="imgSlider('img/jednosoban/1.jpg')">
+              <img src="img/jednosoban/1.jpg" />
+            </li>
+            <li onclick="imgSlider('img/jednosoban/2.jpg')">
+              <img src="img/jednosoban/2.jpg" />
+            </li>
+            <li onclick="imgSlider('img/jednosoban/3.jpg')">
+              <img src="img/jednosoban/3.jpg" />
+            </li>
+            <li onclick="imgSlider('img/jednosoban/4.jpg')">
+              <img src="img/jednosoban/4.jpg" />
+            </li>
+          </ul>
+        </div>
         <div class="soba__text">
           <h1>Apartman sa jednom spavaćom sobom</h1>
           <p>
@@ -438,5 +469,10 @@
     ></script>
     <script type="text/javascript" src="js/phobs.js"></script>
     <script type="text/javascript" src="js/kala.js"></script>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.getElementById('slider1').src = anything;
+      }
+    </script>
   </body>
 </html>
