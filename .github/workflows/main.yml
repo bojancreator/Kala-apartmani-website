@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ftp://ftp.kalabudva.me/
-        ftp-username: bojan@emarket1ng.net
+        ftp-username: bojan@kalabudva.me
         ftp-password: ${{ secrets.FTP_PASSWORD }}
