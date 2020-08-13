@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $dark-gray;
   font-family: $ff-s;
@@ -12,10 +16,12 @@ header {
   right: 0;
   transition: background-color 1s;
   z-index: 1;
+
   &.fixed-header {
     height: 60px;
     background-color: rgba($white, 1);
     color: $dark-gray;
+
     & li.logo img {
       height: 40px;
     }
@@ -26,11 +32,13 @@ header {
 .header-mobilni {
   display: none;
 }
+
 @media only screen and (max-width: 1023px) {
   .logo {
     display: none;
     height: 0;
   }
+
   .header-mobilni {
     display: flex;
     flex-direction: column;
@@ -73,6 +81,7 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 .btn {
   padding: 1em 2em;
   font-weight: 700;
@@ -82,10 +91,12 @@ a {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
+
 .btn-primary {
   background-color: $accent;
   color: $white;
   transition: opacity 0.5s;
+
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -97,6 +108,7 @@ a {
   color: $white;
   border: 2px solid $white;
   transition: all 0.5s;
+
   &:hover,
   &:focus {
     background-color: $white;
@@ -104,6 +116,7 @@ a {
     color: $accent;
   }
 }
+
 .btn-text {
   background-color: unset;
   width: max-content;
@@ -112,11 +125,13 @@ a {
   color: currentColor;
   margin-top: 10px;
   position: relative;
+
   &:hover,
   &:focus {
     text-decoration: none;
     outline: none;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -127,6 +142,7 @@ a {
     width: 0;
     transition: width 0.5s ease-in;
   }
+
   &:hover::after {
     width: 175px;
   }
@@ -158,6 +174,7 @@ textarea:focus {
 input[type='submit'] {
   text-transform: uppercase;
 }
+
 ::placeholder {
   padding-left: 0.3em;
   font-size: 0.9em;
