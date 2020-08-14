@@ -44,8 +44,16 @@ body#kontakt-sr {
     input {
       width: 100%;
     }
+    @media only screen and (max-width: 400px) {
+      margin-bottom: 1em;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    grid-gap: unset;
+    margin-bottom: 1em;
   }
 }
+
 .address__box {
   outline: 1px solid $white;
   outline-offset: -10px;
@@ -60,6 +68,9 @@ body#kontakt-sr {
   height: 100%;
   h3 {
     font-size: 1.5em;
+  }
+  @media only screen and (max-width: 400px) {
+    height: auto;
   }
 }
 
