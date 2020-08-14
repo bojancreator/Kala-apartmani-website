@@ -1,0 +1,33 @@
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+RewriteEngine on
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.kalabudva.me/$1 [R,L]
+RewriteCond %{HTTP_REFERER} !^http://kalabudva.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://kalabudva.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.kalabudva.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.kalabudva.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://kalabudva.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://kalabudva.me$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.kalabudva.me/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.kalabudva.me$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+RewriteBase /
+# Hide .html extension
+## External Redirect
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,NC]
+
+## ## Internal Redirect
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html
+
+
+
