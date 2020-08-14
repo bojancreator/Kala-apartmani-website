@@ -104,9 +104,25 @@
 
   <!-- SOBE -->
   <section class="sobe">
-    <!-- <h1 class="sobe__title">SOBE</h1> -->
+    <!-- apartman sa jednom spavaćom sobom -->
     <div class="soba soba__levo">
-      <img src="img/jednosoban/1.jpg" alt="jednosoba apartman" />
+      <div class="soba__galerija">
+        <img src="img/jednosoban/1.jpg" id="sliderJednosoban" />
+        <ul class="gallery__navigation">
+          <li onclick="imgSliderJednosoban('img/jednosoban/1.jpg')">
+            <img src="img/jednosoban/1.jpg" />
+          </li>
+          <li onclick="imgSliderJednosoban('img/jednosoban/11.jpg')">
+            <img src="img/jednosoban/11.jpg" />
+          </li>
+          <li onclick="imgSliderJednosoban('img/jednosoban/3.jpg')">
+            <img src="img/jednosoban/3.jpg" />
+          </li>
+          <li onclick="imgSliderJednosoban('img/jednosoban/22.jpg')">
+            <img src="img/jednosoban/22.jpg" />
+          </li>
+        </ul>
+      </div>
       <div class="soba__text">
         <h1>Apartman sa jednom spavaćom sobom</h1>
         <p>
@@ -120,22 +136,57 @@
         </p>
       </div>
     </div>
+
     <div class="soba soba__desno">
       <div class="soba__text">
         <h1>Studio apartmani</h1>
         <p>
-          Studio apartman veličine je 31m², nalaze se na prvom i drugom spratu,
-          raspolažu spavaćom sobom sa francuskim ležajem, sofom, tarasom,
-          kuhinjom, frižiderom, šporetom, mikrotalasnom, klima, kupatilom sa
-          tušem, fenom, daskom za peglanje, peglom, WI-FI, Samsung Smart TV 50
-          inča sa velikim izborom kablovskih kanala, Air playmod streaming sa
-          iPhone-a, Netflix, HBO Go. Balkon. Pogled na prirodu.
+          Studio apartman veličine je 31m², nalaze se na prvom i drugom
+          spratu, raspolažu spavaćom sobom sa francuskim ležajem, sofom,
+          tarasom, kuhinjom, frižiderom, šporetom, mikrotalasnom, klima,
+          kupatilom sa tušem, fenom, daskom za peglanje, peglom, WI-FI,
+          Samsung Smart TV 50 inča sa velikim izborom kablovskih kanala, Air
+          playmod streaming sa iPhone-a, Netflix, HBO Go. Balkon. Pogled na
+          prirodu.
         </p>
       </div>
-      <img src="img/studio/1.jpg" alt="studio apartman bijeli" />
+      <div class="soba__galerija">
+        <img src="img/studio/1.jpg" id="sliderStudio" />
+        <ul class="gallery__navigation">
+          <li onclick="imgSliderStudio('img/studio/1.jpg')">
+            <img src="img/studio/1.jpg" />
+          </li>
+          <li onclick="imgSliderStudio('img/studio/5.jpg')">
+            <img src="img/studio/5.jpg" />
+          </li>
+          <li onclick="imgSliderStudio('img/studio/6.jpg')">
+            <img src="img/studio/6.jpg" />
+          </li>
+          <li onclick="imgSliderStudio('img/studio/13.jpg')">
+            <img src="img/studio/13.jpg" />
+          </li>
+        </ul>
+      </div>
     </div>
+
     <div class="soba soba__levo">
-      <img src="img/superior/1.jpg" alt="superior dvokrevetna soba" />
+      <div class="soba__galerija">
+        <img src="img/superior/1.jpg" id="sliderSuperior" />
+        <ul class="gallery__navigation">
+          <li onclick="imgSliderSuperior('img/superior/1.jpg')">
+            <img src="img/superior/1.jpg" />
+          </li>
+          <li onclick="imgSliderSuperior('img/superior/2.jpg')">
+            <img src="img/superior/2.jpg" />
+          </li>
+          <li onclick="imgSliderSuperior('img/superior/4.jpg')">
+            <img src="img/superior/4.jpg" />
+          </li>
+          <li onclick="imgSliderSuperior('img/superior/5.jpg')">
+            <img src="img/superior/5.jpg" />
+          </li>
+        </ul>
+      </div>
       <div class="soba__text">
         <h1>Superior dvokrevetna soba</h1>
         <p>
@@ -146,10 +197,8 @@
           HBO Go. Balkon. Pogled na grad.
         </p>
       </div>
-
     </div>
     <div class="soba soba__desno">
-
       <div class="soba__text">
         <h1>Standardna dvokrevetna soba</h1>
         <p>
@@ -160,9 +209,28 @@
           streaming sa iPhone-a Netflix, HBO Go. Pogled na grad.
         </p>
       </div>
-      <img src="img/standard/1.jpg" alt="jednosoba apartman" />
+      <div class="soba__galerija">
+        <img src="img/standard/1.jpg" id="sliderDvokrevetna" />
+        <ul class="gallery__navigation">
+          <li onclick="imgSliderDvokrevetna('img/standard/1.jpg')">
+            <img src="img/standard/1.jpg" />
+          </li>
+          <li onclick="imgSliderDvokrevetna('img/standard/3.jpg')">
+            <img src="img/standard/3.jpg" />
+          </li>
+          <li onclick="imgSliderDvokrevetna('img/standard/6.jpg')">
+            <img src="img/standard/6.jpg" />
+          </li>
+          <li onclick="imgSliderDvokrevetna('img/standard/10.jpg')">
+            <img src="img/standard/10.jpg" />
+          </li>
+        </ul>
+      </div>
     </div>
+    </div>
+
   </section>
+  <!-- SOBE end-->
 
   <!-- sobe dodatno start -->
 
@@ -287,6 +355,23 @@
   <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
   <script type="text/javascript" src="js/phobs.js"></script>
   <script type="text/javascript" src="js/kala.js"></script>
+  <script type="text/javascript">
+    function imgSliderJednosoban(anything) {
+      document.getElementById('sliderJednosoban').src = anything;
+    }
+
+    function imgSliderSuperior(anything) {
+      document.getElementById('sliderSuperior').src = anything;
+    }
+
+    function imgSliderStudio(anything) {
+      document.getElementById('sliderStudio').src = anything;
+    }
+
+    function imgSliderDvokrevetna(anything) {
+      document.getElementById('sliderDvokrevetna').src = anything;
+    }
+  </script>
 </body>
 
 </html>

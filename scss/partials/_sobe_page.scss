@@ -1,5 +1,6 @@
 .sobe {
   margin-top: 126px;
+
   @media only screen and (max-width: 800px) {
     margin-top: 55px;
   }
@@ -8,6 +9,7 @@
 .soba {
   display: grid;
   height: 600px;
+
   @media only screen and (max-width: 800px) {
     height: auto;
   }
@@ -17,11 +19,13 @@
     object-fit: cover;
     object-position: bottom;
     height: 100%;
+
     @media only screen and (max-width: 800px) {
       height: auto;
     }
   }
 }
+
 .soba__text {
   display: flex;
   flex-direction: column;
@@ -36,14 +40,17 @@
 
 .soba__levo {
   grid-template-columns: 5fr 3fr;
+
   @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
   .soba__text {
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
     text-align: right;
     margin-left: -5em;
+
     @media only screen and (max-width: 800px) {
       text-align: center;
       align-items: unset;
@@ -51,16 +58,30 @@
       clip-path: none;
     }
   }
+
+  .gallery__navigation {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+
+  .gallery__navigation {
+    margin-left: 1em;
+    margin-right: auto;
+  }
 }
 
 .soba__desno {
   grid-template-columns: 3fr 5fr;
+
   @media only screen and (max-width: 800px) {
     grid-template-columns: 1fr;
   }
+
   .soba__text {
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
     margin-right: -5em;
+    z-index: 101;
+
     @media only screen and (max-width: 800px) {
       text-align: center;
       align-items: unset;
@@ -69,9 +90,121 @@
       grid-row: 2;
     }
   }
+
   @media only screen and (max-width: 800px) {
     img {
       grid-row: 1;
     }
+  }
+
+  .gallery__navigation {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+}
+
+.soba__gallery {
+  position: relative;
+  //overflow: hidden;
+
+  &__images {
+    /*     position: absolute;
+    left: 0;
+    right: 0; */
+    object-fit: cover;
+    object-position: bottom;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__thumbs {
+    position: absolute;
+    height: auto;
+    display: flex;
+    width: 90%;
+    bottom: 1em;
+    left: 1em;
+    grid-gap: 1em;
+
+    & a {
+      border: 3px solid $white;
+      filter: grayscale(0);
+      transition: filter 0.5s ease-in-out;
+    }
+
+    & a:hover {
+      filter: grayscale(1);
+      transition: filter 0.5s ease-in-out;
+    }
+  }
+}
+
+.soba__gallery_nav {
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  top: 300px;
+
+  i {
+    font-size: 2em;
+    color: $white;
+  }
+}
+
+.soba__galerija {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.soba__galerija #sliderJednosoban,
+.soba__galerija #sliderSuperior,
+.soba__galerija #sliderStudio,
+.soba__galerija #sliderDvokrevetna {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in;
+
+  @media only screen and (max-width: 800px) {
+    position: relative;
+  }
+}
+
+.soba__galerija .gallery__navigation {
+  position: relative;
+  width: 90%;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  //margin-left: 1em;
+  margin-bottom: 1em;
+  grid-gap: 1em;
+
+  li {
+    list-style-type: none;
+    cursor: pointer;
+
+    img {
+      border: 4px solid #fff;
+      border-radius: 4px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    position: absolute;
+    margin: 0;
+    bottom: 0.5em;
+    left: 5%;
+    right: 5%;
+    grid-gap: 0.5em;
   }
 }
