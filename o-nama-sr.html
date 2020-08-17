@@ -10,16 +10,19 @@
   <meta name="description"
     content="Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža i istoimene, najpopularnije Budvanske plaže." />
   <meta name="generator" content="emarket1ng.NET Web system" />
-  <title>Kontakt</title>
+  <title>O apartmanima</title>
   <link href="css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/main.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
 </head>
 
-<body id="kontakt-sr">
+<body id="o-apartmanima-sr">
   <!-- header start -->
   <header class="header">
     <!-- hamburger -->
@@ -108,43 +111,78 @@
   <!-- booking end -->
 
   <!-- HERO -->
-  <section class="kontakt">
-    <div class="container">
-      <h1 class="kontakt-title">Kontaktirajte nas</h1>
-      <h4 class="sent-notification"></h4>
-      <!-- <div class="kontakt__grid"> -->
-      <div class="kontakt__forma">
-        <form id="myContactForm">
-          <input id="name" type="text" placeholder="ime i prezime" />
-          <input id="email" type="text" placeholder="email" />
-          <input id="subject" type="text" placeholder="Tema poruke" />
-          <textarea id="body" rows="5" placeholder="Poruka" name="poruka"></textarea>
-          <button class="btn btn-primary" type="button" onclick="sendEmail()" value="Send An Email">
-            Pošalji
-          </button>
-        </form>
-        <div class="address__box">
-          <h3 class="address__title">Kontakt</h3>
-          <p class="address__text">
-            Adresa: Ulica 14, br. 9<br />
-            Budva, Crna gora<br />
-            Tel: +382 67 116116<br />
-            Email:
-            <a href="mailto:welcome@kalabudva.me">welcome@kalabudva.me</a>
-          </p>
-        </div>
-        <!-- </div> -->
+  <section class="apartmani">
+    <div class="apartmani--text">
+      <h1 class="apartmani-title">O Kala apartmanima</h1>
+      <p>
+        Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko od
+        saobraćajne buke, a u blizini turističkog naselja Slovenska plaža i
+        istoimene, najpopularnije Budvanske plaže.<br />
+        Zbog svoje lokacije i blizine plaže idealni su za porodice sa decom,
+        takođe za mlade parove i omladinu za samo 15-tak minuta hoda stiže se
+        do popularnih mesta za provod, restorana, kafića, diskoteka...
+      </p>
+      <p>
+        Plaže su udaljeni 600m, a isto toliko i od glavne autobuske stanice.
+        Stari grad Budve udaljen je 1,5km.<br />
+        Objekat raspolaže sa 2 jednokrevetna apartmana, 2 sudio apartmana i 4
+        dvokrevetne sobe.
+      </p>
+      <p>
+        Sobe i apartmani su opremljeni modernim nameštajem, smart tv uređajima
+        sa kablovskim kanalima, kuhinjom, klimom, kupatilom, tarasom, wi-fi
+        internetom i privatnim parkingom.<br />
+        Sve smeštajne jedinice locirane su na prvom i drugom spratu.<br />
+        Parking se naplaćuje i mora se unapred rezervisati.
+      </p>
+      <p>
+        Wi-fi je besplatan. <br />
+        Zgrada poseduje lift.
+      </p>
+    </div>
+    <div class="apartmani__img">
+      <img src="/img/zgrada/1.jpg" alt="zgrada" />
+    </div>
+  </section>
+
+  <section class="apartmani--gallery">
+    <div class="photo-gallery">
+      <div class="gallery__img">
+        <a href="/img/jednosoban/9.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/jednosoban/9.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/jednosoban/24.jpg" data-lightbox="photos"><img class="img-fluid"
+            src="/img/jednosoban/24.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/standard/8.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/standard/8.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/studio/18.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/studio/18.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/jednosoban/31.jpg" data-lightbox="photos"><img class="img-fluid"
+            src="/img/jednosoban/31.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/jednosoban/22.jpg" data-lightbox="photos"><img class="img-fluid"
+            src="/img/jednosoban/22.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/studio/9.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/studio/9.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/jednosoban/29.jpg" data-lightbox="photos"><img class="img-fluid"
+            src="/img/jednosoban/29.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/studio/12.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/studio/12.jpg" /></a>
+      </div>
+      <div class="gallery__img">
+        <a href="/img/standard/9.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/standard/9.jpg" /></a>
       </div>
     </div>
   </section>
-  <!-- mapa -->
-  <section class="mapa">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5902.885333173818!2d18.841103732564463!3d42.290419083954454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIzLjciTiAxOMKwNTAnNDEuNiJF!5e0!3m2!1ssr!2srs!4v1597309434294!5m2!1ssr!2srs"
-      width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
-  </section>
-  <!-- mapa end -->
 
   <!-- footer -->
   <footer>
@@ -197,50 +235,8 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
   <script type="text/javascript" src="js/phobs.js"></script>
-
   <script type="text/javascript" src="js/kala.js"></script>
-
-  <!-- php kontakt forma -->
-  <script type="text/javascript">
-    function sendEmail() {
-      var name = $('#name');
-      var email = $('#email');
-      var subject = $('#subject');
-      var body = $('#body');
-
-      if (
-        isNotEmpty(name) &&
-        isNotEmpty(email) &&
-        isNotEmpty(subject) &&
-        isNotEmpty(body)
-      ) {
-        $.ajax({
-          url: '../php/sendEmail.php',
-          method: 'POST',
-          dataType: 'json',
-          data: {
-            name: name.val(),
-            email: email.val(),
-            subject: subject.val(),
-            body: body.val(),
-          },
-          success: function (response) {
-            $('#myContactForm')[0].reset();
-            $('.sent-notification').text('Message Sent Successfully.');
-          },
-        });
-      }
-    }
-
-    function isNotEmpty(caller) {
-      if (caller.val() == '') {
-        caller.css('border', '2px solid red');
-        return false;
-      } else caller.css('border', '');
-
-      return true;
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
 
 </html>
