@@ -1,79 +1,147 @@
 <!DOCTYPE html>
 <html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="kala apartmani, budva apartmani, apartments in montenegro, apartments in budva, Crna Gora, letovanje, leto, ljeto, ljetovanje, sea, vacation, adriatic, mediteranean, summer, plaža, beach"
+    />
+    <meta
+      name="description"
+      content="Kala apartmani nalaze se u širem centru grada u mirnoj ulici daleko od saobraćajne buke, a u blizini turističkog naselja Slovenska plaža i istoimene, najpopularnije Budvanske plaže."
+    />
+    <meta name="generator" content="emarket1ng.NET Web system" />
+    <title>Kontakt</title>
+    <link
+      href="css/bootstrap-datepicker3.standalone.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Kontakt</title>
-  <link href="css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-</head>
-
-<body id="kontakt-sr">
-  <!-- header start -->
-  <header class="header">
-    <!-- hamburger -->
-    <div class="header-mobilni">
-      <img class="logo-mobilni" src="img/logo/kala-logo.png" alt="logo mobilni" />
-      <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-      </div>
-    </div>
-    <!-- hamburger end -->
-    <nav class="navigation">
-      <ul>
-        <li><a href="/">Početna</a></li>
-        <li><a href="o-apartmanima-sr.html">O apartmanima</a></li>
-        <li><a href="sobe-sr.html">Sobe</a></li>
-        <li class="logo">
-          <a href="/" class="logo-link">
-            <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
-          </a>
-        </li>
-        <li><a href="destinacija-sr.html">Destinacija</a></li>
-        <li><a href="specijalne-ponude-sr.html">Specijalne ponude</a></li>
-        <li><a href="kontakt-sr.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- header end -->
-
-  <!-- booking start -->
-  <section class="booking">
-    <div class="container">
-      <div class="book-btn">
-        <i class="fas fa-sort-amount-up-alt"></i>
-        <i class="fas fa-times"></i>
-      </div>
-      <h2>Rezervaciona forma</h2>
-
-      <form action="https://secure.phobs.net/booking.php" method="get" id="phobs_book" name="phobs_book"
-        class="booking__forma" target="_blank">
-        <input name="hotel" type="hidden" value="f6e540ff6a059c219039032332881124" style="display: none;" />
-        <div class="form_date from_date">
-          <label>Dolazak</label>
-          <input class="check_in_day" name="check_in_day" type="hidden" value="" />
-          <input class="check_in_month" name="check_in_month" type="hidden" value="" />
-          <input class="check_in_year" name="check_in_year" type="hidden" value="" />
-          <input class="datepicker form-control" name="booking-checkin" readonly="readonly" type="text"
-            placeholder="Arrival Date" class="fa fa-calendar" />
-          <i class="fa fa-calendar" aria-hidden="true"></i>
+  <body id="kontakt-sr">
+    <!-- header start -->
+    <header class="header">
+      <!-- hamburger -->
+      <div class="header-mobilni">
+        <img
+          class="logo-mobilni"
+          src="img/logo/kala-logo.png"
+          alt="logo mobilni"
+        />
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
         </div>
-        <div class="form_date to_date departure">
-          <label>Odlazak</label>
+      </div>
+      <!-- hamburger end -->
+      <nav class="navigation">
+        <ul>
+          <li><a href="/">Početna</a></li>
+          <li><a href="o-apartmanima-sr.html">O apartmanima</a></li>
+          <li><a href="sobe-sr.html">Sobe</a></li>
+          <li class="logo">
+            <a href="/" class="logo-link">
+              <img src="img/logo/kala-logo.png" alt="Kala apartmani logo" />
+            </a>
+          </li>
+          <li><a href="destinacija-sr.html">Destinacija</a></li>
+          <li><a href="specijalne-ponude-sr.html">Specijalne ponude</a></li>
+          <li><a href="kontakt-sr.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
 
-          <input class="check_out_day" name="check_out_day" type="hidden" value="" />
-          <input class="check_out_month" name="check_out_month" type="hidden" value="" />
-          <input class="check_out_year" name="check_out_year" type="hidden" value="" />
-          <input class="datepicker form-control" name="booking-checkout" readonly="readonly" type="text"
-            placeholder="Departure Date" /><i class="fa fa-calendar" aria-hidden="true"></i>
+    <!-- booking start -->
+    <section class="booking">
+      <div class="container">
+        <div class="book-btn">
+          <i class="fas fa-sort-amount-up-alt"></i>
+          <i class="fas fa-times"></i>
         </div>
-        <!--           <div class="form-group">
+        <h2>Rezervaciona forma</h2>
+
+        <form
+          action="https://secure.phobs.net/booking.php"
+          method="get"
+          id="phobs_book"
+          name="phobs_book"
+          class="booking__forma"
+          target="_blank"
+        >
+          <input
+            name="hotel"
+            type="hidden"
+            value="f6e540ff6a059c219039032332881124"
+            style="display: none;"
+          />
+          <div class="form_date from_date">
+            <label>Dolazak</label>
+            <input
+              class="check_in_day"
+              name="check_in_day"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_in_month"
+              name="check_in_month"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_in_year"
+              name="check_in_year"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="datepicker form-control"
+              name="booking-checkin"
+              readonly="readonly"
+              type="text"
+              placeholder="Arrival Date"
+              class="fa fa-calendar"
+            />
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+          <div class="form_date to_date departure">
+            <label>Odlazak</label>
+
+            <input
+              class="check_out_day"
+              name="check_out_day"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_out_month"
+              name="check_out_month"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="check_out_year"
+              name="check_out_year"
+              type="hidden"
+              value=""
+            />
+            <input
+              class="datepicker form-control"
+              name="booking-checkout"
+              readonly="readonly"
+              type="text"
+              placeholder="Departure Date"
+            /><i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+          <!--           <div class="form-group">
             <label>Pristupni ključ (opciono)</label>
             <input
               name="partners_access"
@@ -82,160 +150,205 @@
               placeholder="Access Key"
             />
           </div> -->
-        <div class="form-button-group">
-          <label class="booking-label">&nbsp;</label>
-          <button type="submit" class="btn btn-primary">
-            BOOK NOW
-          </button>
-          <input name="company_id" type="hidden" value="3ee86bd97786d3f1b4636072a4ba8450" style="display: none;" />
-          <input name="view_cancel" type="hidden" value="" style="display: none;" />
-          <input name="lang" type="hidden" value="en" style="display: none;" />
-          <div class="advanced_form_link">
-            <a href="https://secure.phobs.net/booking.php?company_id=3ee86bd97786d3f1b4636072a4ba8450&amp;lang=en&amp;view_cancel=1"
-              target="_blank" rel="noopener noreferrer" class="view_cancel" onclick="return viewCancelBooking(this)">
-              Change/Cancel reservation
-            </a>
+          <div class="form-button-group">
+            <label class="booking-label">&nbsp;</label>
+            <button type="submit" class="btn btn-primary">
+              BOOK NOW
+            </button>
+            <input
+              name="company_id"
+              type="hidden"
+              value="3ee86bd97786d3f1b4636072a4ba8450"
+              style="display: none;"
+            />
+            <input
+              name="view_cancel"
+              type="hidden"
+              value=""
+              style="display: none;"
+            />
+            <input
+              name="lang"
+              type="hidden"
+              value="en"
+              style="display: none;"
+            />
+            <div class="advanced_form_link">
+              <a
+                href="https://secure.phobs.net/booking.php?company_id=3ee86bd97786d3f1b4636072a4ba8450&amp;lang=en&amp;view_cancel=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="view_cancel"
+                onclick="return viewCancelBooking(this)"
+              >
+                Change/Cancel reservation
+              </a>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </section>
-  <!-- booking end -->
-
-  <!-- HERO -->
-  <section class="kontakt">
-    <div class="container">
-      <h1 class="kontakt-title">Kontaktirajte nas</h1>
-      <h4 class="sent-notification"></h4>
-      <!-- <div class="kontakt__grid"> -->
-      <div class="kontakt__forma">
-        <form id="myContactForm">
-          <input id="name" type="text" placeholder="ime i prezime" />
-          <input id="email" type="text" placeholder="email" />
-          <input id="subject" type="text" placeholder="Tema poruke" />
-          <textarea id="body" rows="5" placeholder="Poruka" name="poruka"></textarea>
-          <button class="btn btn-primary" type="button" onclick="sendEmail()" value="Send An Email">
-            Pošalji
-          </button>
         </form>
-        <div class="address__box">
-          <h3 class="address__title">Kontakt</h3>
-          <p class="address__text">
+      </div>
+    </section>
+    <!-- booking end -->
+
+    <!-- HERO -->
+    <section class="kontakt">
+      <div class="container">
+        <h1 class="kontakt-title">Kontaktirajte nas</h1>
+        <h4 class="sent-notification"></h4>
+        <!-- <div class="kontakt__grid"> -->
+        <div class="kontakt__forma">
+          <form id="myContactForm">
+            <input id="name" type="text" placeholder="ime i prezime" />
+            <input id="email" type="text" placeholder="email" />
+            <input id="subject" type="text" placeholder="Tema poruke" />
+            <textarea
+              id="body"
+              rows="5"
+              placeholder="Poruka"
+              name="poruka"
+            ></textarea>
+            <button
+              class="btn btn-primary"
+              type="button"
+              onclick="sendEmail()"
+              value="Send An Email"
+            >
+              Pošalji
+            </button>
+          </form>
+          <div class="address__box">
+            <h3 class="address__title">Kontakt</h3>
+            <p class="address__text">
+              Adresa: Ulica 14, br. 9<br />
+              Budva, Crna gora<br />
+              Tel: +382 67 116116<br />
+              Email:
+              <a href="mailto:welcome@kalabudva.me">welcome@kalabudva.me</a>
+            </p>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- mapa -->
+    <section class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5902.885333173818!2d18.841103732564463!3d42.290419083954454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIzLjciTiAxOMKwNTAnNDEuNiJF!5e0!3m2!1ssr!2srs!4v1597309434294!5m2!1ssr!2srs"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </section>
+    <!-- mapa end -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="bottom-box logo-footer">
+          <img src="img/logo/kala-logo-beli.png" alt="logo footer" />
+        </div>
+        <div class="bottom-box menu-footer">
+          <ul class="menu-down">
+            <li class="menu-list"><a href="/">Početna</a></li>
+            <li class="menu-list">
+              <a href="o-apartmanima-sr.html">O apartmanima</a>
+            </li>
+            <li class="menu-list"><a href="sobe-sr.html">Sobe</a></li>
+            <li class="menu-list">
+              <a href="destinacija-sr.html">Destinacija</a>
+            </li>
+            <li class="menu-list">
+              <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
+            </li>
+            <li class="menu-list"><a href="kontakt-sr.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="bottom-box social-footer">
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="bottom-box kontakt-footer">
+          <h3>Kontakt</h3>
+          <p>
             Adresa: Ulica 14, br. 9<br />
             Budva, Crna gora<br />
-            Tel: +382 67 116116<br />
+            Tel: <a href="tel:+3826116116"> +382 67 116116</a><br />
             Email:
-            <a href="mailto:welcome@kalabudva.me">welcome@kalabudva.me</a>
+            <a href="mailto:welcome@kalabudva.me"> welcome@kalabudva.me</a>
           </p>
         </div>
-        <!-- </div> -->
       </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright start -->
+    <div class="copyright">
+      ©&nbsp;MONTENEGRO&nbsp;STARS&nbsp;HOTEL&nbsp;GROUP |
+      WEB&nbsp;SYSTEM&nbsp;BY<a
+        href="https://www.emarket1ng.net"
+        target="_blank"
+        >&nbsp;EMARKET1NG.NET</a
+      >
     </div>
-  </section>
-  <!-- mapa -->
-  <section class="mapa">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5902.885333173818!2d18.841103732564463!3d42.290419083954454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE3JzIzLjciTiAxOMKwNTAnNDEuNiJF!5e0!3m2!1ssr!2srs!4v1597309434294!5m2!1ssr!2srs"
-      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
-  </section>
-  <!-- mapa end -->
+    <!-- copyright end -->
+    <script
+      src="https://kit.fontawesome.com/bcdbaf081a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/bootstrap-datepicker.min.js"
+    ></script>
+    <script type="text/javascript" src="js/phobs.js"></script>
 
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="bottom-box logo-footer">
-        <img src="img/logo/kala-logo-beli.png" alt="logo footer" />
-      </div>
-      <div class="bottom-box menu-footer">
-        <ul class="menu-down">
-          <li class="menu-list"><a href="/">Početna</a></li>
-          <li class="menu-list">
-            <a href="o-apartmanima-sr.html">O apartmanima</a>
-          </li>
-          <li class="menu-list"><a href="sobe-sr.html">Sobe</a></li>
-          <li class="menu-list">
-            <a href="destinacija-sr.html">Destinacija</a>
-          </li>
-          <li class="menu-list">
-            <a href="specijalne-ponude-sr.html">Specijalne ponude</a>
-          </li>
-          <li class="menu-list"><a href="kontakt-sr.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="bottom-box social-footer">
-        <a href="#"><i class="fab fa-instagram-square"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-      </div>
-      <div class="bottom-box kontakt-footer">
-        <h3>Kontakt</h3>
-        <p>
-          Adresa: Ulica 14, br. 9<br />
-          Budva, Crna gora<br />
-          Tel: <a href="tel:+3826116116"> +382 67 116116</a><br />
-          Email:
-          <a href="mailto:welcome@kalabudva.me"> welcome@kalabudva.me</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer end -->
+    <script type="text/javascript" src="js/kala.js"></script>
 
-  <!-- copyright start -->
-  <div class="copyright">
-    ©&nbsp;MONTENEGRO&nbsp;STARS&nbsp;HOTEL&nbsp;GROUP |
-    WEB&nbsp;SYSTEM&nbsp;BY<a href="https://www.emarket1ng.net" target="_blank">&nbsp;EMARKET1NG.NET</a>
-  </div>
-  <!-- copyright end -->
-  <script src="https://kit.fontawesome.com/bcdbaf081a.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
-  <script type="text/javascript" src="js/phobs.js"></script>
+    <!-- php kontakt forma -->
+    <script type="text/javascript">
+      function sendEmail() {
+        var name = $('#name');
+        var email = $('#email');
+        var subject = $('#subject');
+        var body = $('#body');
 
-  <script type="text/javascript" src="js/kala.js"></script>
-
-  <!-- php kontakt forma -->
-  <script type="text/javascript">
-    function sendEmail() {
-      var name = $('#name');
-      var email = $('#email');
-      var subject = $('#subject');
-      var body = $('#body');
-
-      if (
-        isNotEmpty(name) &&
-        isNotEmpty(email) &&
-        isNotEmpty(subject) &&
-        isNotEmpty(body)
-      ) {
-        $.ajax({
-          url: '../php/sendEmail.php',
-          method: 'POST',
-          dataType: 'json',
-          data: {
-            name: name.val(),
-            email: email.val(),
-            subject: subject.val(),
-            body: body.val(),
-          },
-          success: function (response) {
-            $('#myContactForm')[0].reset();
-            $('.sent-notification').text('Message Sent Successfully.');
-          },
-        });
+        if (
+          isNotEmpty(name) &&
+          isNotEmpty(email) &&
+          isNotEmpty(subject) &&
+          isNotEmpty(body)
+        ) {
+          $.ajax({
+            url: '../php/sendEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+              name: name.val(),
+              email: email.val(),
+              subject: subject.val(),
+              body: body.val(),
+            },
+            success: function (response) {
+              $('#myContactForm')[0].reset();
+              $('.sent-notification').text('Message Sent Successfully.');
+            },
+          });
+        }
       }
-    }
 
-    function isNotEmpty(caller) {
-      if (caller.val() == '') {
-        caller.css('border', '2px solid red');
-        return false;
-      } else caller.css('border', '');
+      function isNotEmpty(caller) {
+        if (caller.val() == '') {
+          caller.css('border', '2px solid red');
+          return false;
+        } else caller.css('border', '');
 
-      return true;
-    }
-  </script>
-</body>
-
+        return true;
+      }
+    </script>
+  </body>
 </html>
