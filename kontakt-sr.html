@@ -17,6 +17,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("myContactForm").submit();
+       }
+     </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175575722-1"></script>
   <script>
@@ -132,7 +138,7 @@
           <input id="email" type="text" placeholder="email" />
           <input id="subject" type="text" placeholder="Tema poruke" />
           <textarea id="body" rows="5" placeholder="Poruka" name="poruka"></textarea>
-          <button class="btn btn-primary" type="button" onclick="sendEmail()" value="Send An Email">
+          <button class="btn btn-primary g-recaptcha" data-sitekey="6LftrcAZAAAAAKS7V6KEYxZ2WjatmUpBdY97i-uf" data-callback='onSubmit' type="button" onclick="sendEmail()" value="Send An Email">
             Pošalji
           </button>
         </form>
