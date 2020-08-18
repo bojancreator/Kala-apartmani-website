@@ -34,3 +34,16 @@ $RECYCLE.BIN/
 # folders
 scss/
 node_modules/
+
+# git relate files
+.gitignore
+*/.gitignore      # ignore files in sub directories
+*/.gitkeep
+.git-ftp-ignore
+.git-ftp-include
+.gitlab-ci.yml
+
+# ignore files
+foobar.txt
+*.txt
+config/*
