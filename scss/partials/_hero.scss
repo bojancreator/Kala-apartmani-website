@@ -27,3 +27,36 @@
     visibility: visible;
   }
 }
+
+.hero__booking-com {
+  max-width: 200px;
+  width: 20%;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  animation: 2s fadeIn;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 1;
+  @media only screen and (max-width: 920px) {
+    display: none;
+  }
+}
+
+.hero__booking-com img {
+  width: 100%;
+  height: auto;
+}
+img.hero__booking-com-img {
+  display: none;
+  @media only screen and (max-width: 920px) {
+    display: block;
+    width: 280px;
+    height: auto;
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 1;
+  }
+}
